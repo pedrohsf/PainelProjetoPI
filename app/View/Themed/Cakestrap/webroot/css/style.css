@@ -1,0 +1,38 @@
+
+
+
+#UserLoginForm{
+	margin-right: 20px;
+	padding: 0;
+	width: 30%;
+	border: 1px #888 solid;
+	text-align: center;
+	display:table;
+	margin-bottom:30px;
+	margin-left: 37%;
+	border-radius: 6px;
+	background: #eee;
+}
+#UserLoginForm .input{
+	float:left;
+	width:100%;
+}
+#UserLoginForm .input input, #UserLoginForm .input label{
+	width:80%;
+	margin-bottom:10px;
+}
+#UserLoginForm .submit{
+	margin:0 auto; 
+	margin-bottom:10px;
+}
+
+#UserLoginForm .submit input{
+	border-radius: 6px;
+	padding:5px 40px;
+	-moz-border-radius:6px;
+}
+.font-petzoo img{
+	max-width:260px;
+}
+
+

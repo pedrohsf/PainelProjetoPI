@@ -1,0 +1,32 @@
+Código de upload para arquivos, extensões em arrays.
+	public $actsAs = array(  
+	        'MeioUpload' => array( 
+	                'filename' => array(    
+	                        'maxSize' => '4 MB',
+	                        'dir' => 'files{DS}uploads',
+	                        'allowedMime' => array(  
+	                                'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
+	                                'application/octet-stream', 
+	                                'application/msword', 
+	                                'application/pdf', 
+	                                'text/plain', 
+	                                'application/vnd.oasis.opendocument.text', 
+	                        ), 
+	                        'allowedExt' => array( 
+	                                '.docx', 
+	                                '.doc', 
+	                                '.pdf', 
+	                                '.txt', 
+	                                '.odt',
+	                                '.zip',  
+	                        ), 
+	                       
+	                ), 
+	        ),  
+	); 
+
+Código de upload para imagens , extensões em arrays.
+
+    var $actsAs = array(
+        'MeioUpload' => array('filename')
+    ); 
