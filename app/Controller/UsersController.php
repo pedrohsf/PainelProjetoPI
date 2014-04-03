@@ -8,40 +8,27 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
-
+/**
+ * Components
+ *
+ * @var array
+ */
 	public $components = array('Paginator');
 
-	public function beforeFilter() {
-        parent::beforeFilter();
-        $this->Auth->allow('logout','login','add');
-    }
-	
-	
-	
-	public function login() {
-	  if(!$this->Auth->loggedIn()){
-		if($this->request->is('post')){
-	    	if ($this->Auth->login()) {
-	        	$this->redirect(array('controller'=>'produtos','action'=>'index'));
-	    	} else {
-	    		$this->Session->setFlash(__('Usuario ou senha incorretos.'), 'flash/error'); 
-	    	}
-		}
-	  }else{
-	  	$this->redirect(array('controller'=>'produtos','action'=>'index'));
-	  }
-	} 
-
-	public function logout() {
-	    $this->redirect($this->Auth->logout());
-	}
-	
-	
+/**
+ * index method
+ *
+ * @return void
+ */
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
-
+	
+	public function login(){
+	
+	
+	}
 /**
  * view method
  *
@@ -99,6 +86,25 @@ class UsersController extends AppController {
 		}
 	}
 
+	
+	public function busca_cep($cep){  
+		$resultado = @file_get_contents('http://republicavirtual.com.br/web_cep.php?cep='.urlencode($cep).'&formato=query_string');  
+		if(!$resultado){  
+			$resultado = "&resultado=0&resultado_txt=erro+ao+buscar+cep";  
+		}  
+		parse_str($resultado, $retorno);   
+		return $retorno;  
+	}  
+	
+	
+	public function buscar_o_cep(){ 
+		$resultado_busca = $this->busca_cep('38700-254');  
+
+
+		print_r ($resultado_busca);
+		exit();
+	 }
+	
 /**
  * delete method
  *

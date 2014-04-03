@@ -1,7 +1,7 @@
 
 <div id="page-container" class="row">
 
-	<div id="sidebar" class="col-sm-3">
+	<div id="sidebar" class="col-sm-2">
 		
 		<div class="actions">
 		
@@ -22,12 +22,12 @@
 				<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered">
 					<thead>
 						<tr>
-															<th><?php echo $this->Paginator->sort('id'); ?></th>
-															<th><?php echo $this->Paginator->sort('username'); ?></th>
-															<th><?php echo $this->Paginator->sort('password'); ?></th>
-															<th><?php echo $this->Paginator->sort('role'); ?></th>
-															<th><?php echo $this->Paginator->sort('created'); ?></th>
-															<th><?php echo $this->Paginator->sort('modified'); ?></th>
+															<th><?php echo $this->Paginator->sort('name','Nome'); ?></th>
+															<th><?php echo $this->Paginator->sort('role','Regra'); ?></th>
+															<th><?php echo $this->Paginator->sort('email','E-Mail'); ?></th>
+															<th><?php echo $this->Paginator->sort('accepted','Aceito'); ?></th>
+															<th><?php echo $this->Paginator->sort('telephone','Telefone'); ?></th>
+															<th><?php echo $this->Paginator->sort('modified','Ultima Modificação'); ?></th>
 															<th class="actions"><?php echo __('Ações'); ?></th>
 						</tr>
 					</thead>
@@ -35,12 +35,12 @@
 						<?php
 						foreach ($users as $user): ?>
 	<tr>
-		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>
+	
+		<td><?php echo h($user['User']['name']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['role']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['email']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['accepted']); ?>&nbsp;</td>
+		<td><?php echo h(date('d-m-Y',strtotime($user['User']['modified']))); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Detalhar'), array('action' => 'view', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
 			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>

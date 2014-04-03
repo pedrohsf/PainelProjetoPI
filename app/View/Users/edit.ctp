@@ -40,6 +40,36 @@
 		<?php echo $this->Form->input('role', array('class' => 'form-control')); ?>
 </div><!-- .form-group -->
 
+<div class="form-group">
+	<?php echo $this->Form->label('name', 'name');?>
+		<?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
+<div class="form-group">
+	<?php echo $this->Form->label('email', 'email');?>
+		<?php echo $this->Form->input('email', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
+<div class="form-group">
+	<?php echo $this->Form->label('accepted', 'accepted');?>
+		<?php echo $this->Form->input('accepted', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
+<div class="form-group">
+	<?php echo $this->Form->label('goal', 'goal');?>
+		<?php echo $this->Form->input('goal', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
+<div class="form-group">
+	<?php echo $this->Form->label('telephone', 'telephone');?>
+		<?php echo $this->Form->input('telephone', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
+<div class="form-group">
+	<?php echo $this->Form->label('address_id', 'address_id');?>
+		<?php echo $this->Form->input('address_id', array('class' => 'form-control')); ?>
+</div><!-- .form-group -->
+
 				</fieldset>
 			<?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary')); ?>
 <?php echo $this->Form->end(); ?>

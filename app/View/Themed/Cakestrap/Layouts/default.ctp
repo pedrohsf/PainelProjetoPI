@@ -3,9 +3,9 @@
 <html>
 	<head>
 		<?php echo $this->Html->charset(); ?>
-		<title>
-			PetZoo Painel
-		</title>
+		 
+		 <title>Unipam SI</title>
+		 
 		<?php
 			echo $this->Html->meta('icon');
 			
@@ -16,26 +16,43 @@
 			//echo $this->Html->css('bootstrap-theme.min');
 			echo $this->Html->css('core');
 			echo $this->Html->css('style');
+			echo $this->Html->css('style');
 			echo $this->fetch('css');
 			
-			echo $this->Html->script('libs/jquery-1.10.2.min');
+			echo $this->Html->script('libs/jquery-1.10.2.min'); 
 			echo $this->Html->script('libs/bootstrap.min');
 			
 			echo $this->fetch('script');
 		?>
+		
 	</head>
 
-	<body>
+	
+
 
 		<div id="main-container">
 		
-			<div id="header" class="container">
-				<?php if($logado): ?>
-				<?php echo $this->element('menu/top_menu'); ?>
-				<?php endif; ?>
-			</div><!-- /#header .container -->
+			<?php // echo $this->element('menu/top_menu'); ?>
+			
+			
+			
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container text-center ">
+			 
+				  
+				  <img    src="img/logo_unipam.png"   class="img-rounded unipam_logo"  />
+				  <div class="container">
+						<a class="btn btn-info btn-mini botao_aluno " href="index.html"><i class="icon-globe icon-white"></i> Voltar ao site </a>
+				  </div>
+				  
+			 
+				</div>
+			
+			</div>
 			
 			<div id="content" class="container">
+			
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 			</div><!-- /#header .container -->

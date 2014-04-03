@@ -46,6 +46,31 @@
 			<?php echo h($user['User']['role']); ?>
 			&nbsp;
 		</td>
+</tr><tr>		<td><strong><?php echo __('Name'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['name']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Email'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['email']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Accepted'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['accepted']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Goal'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['goal']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Telephone'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['telephone']); ?>
+			&nbsp;
+		</td>
 </tr><tr>		<td><strong><?php echo __('Created'); ?></strong></td>
 		<td>
 			<?php echo h($user['User']['created']); ?>
@@ -54,6 +79,11 @@
 </tr><tr>		<td><strong><?php echo __('Modified'); ?></strong></td>
 		<td>
 			<?php echo h($user['User']['modified']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Address Id'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['address_id']); ?>
 			&nbsp;
 		</td>
 </tr>					</tbody>

@@ -1,16 +1,25 @@
 
 <?php echo $this->Session->flash('auth'); ?>
-<?php echo $this->Form->create('User');?>
 
-	
-    <fieldset class="janela_login">
-        <legend class="font-petzoo"> 
-        	<?= $this->html->image('logo.png'); ?>
-        </legend>
-        <?php 
-        	echo $this->Form->input('username',array('label'=>'Usuario','placeholder'=>'Usuario'));
-        	echo $this->Form->input('password',array('label'=>'Senha','placeholder'=>'Senha')); 
-    	?> 
-    </fieldset>
 
-<?php echo $this->Form->end(__('Entrar'));?>
+<div class="container"  >
+
+	<?php echo $this->Form->create('User',array('class'=>'form-signin'));?>
+
+		<h2 class="form-signin-heading">Painel do aluno</h2>
+			<?= $this->Form->input('email',array('class'=>'input-block-level','placeholder'=>'E-mai','label'=>false)) ?>
+			<?= $this->Form->input('password',array('class'=>'input-block-level','placeholder'=>'Senha','label'=>false)); ?>
+			<label class="checkbox">
+			  <input type="checkbox" value="remember-me"> Relembrar-me
+			</label>
+			<button class="btn btn-medium btn-primary" type="submit">Entrar</button>
+			<button style="float:right;" class="btn btn-medium btn-primary" type="submit">Solicitar Cadastro</button>
+		
+		</fieldset> 
+	  
+	<?php echo $this->Form->end();?>
+ 
+</div> <!-- /container -->
+
+
+
