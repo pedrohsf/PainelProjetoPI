@@ -3,14 +3,48 @@
 <style type="text/css">
 
 
+    .form_endereco .rua{
 
+        width:50%;
+
+        float:left;
+    }
+    .form_endereco .form-group{
+        width:50%;
+        min-height:100px;
+    }
+    .form_endereco .bairro{
+        float:right;
+        width:50%;
+
+    }
+    .form_endereco * label{
+        width:100%;
+    }
+    .form_endereco *{
+        float:left;
+        width:99%;
+
+    }
+    .form_endereco .estado input{
+        width:50%;
+    }
+    .numero{
+        float:left;
+        width:49%;
+        margin-right:1%;
+    }
+    .complemento{
+        float:left;
+        width:50%;
+    }
 </style>
 
 
 <div id="page-container" class="row">
 
 	<div id="sidebar" class="col-sm-3">
-		
+
 		<div class="actions">
 		
 			<ul class="list-group">
@@ -53,9 +87,7 @@
                             <?php echo $this->Form->input('email', array('class' => 'form-control')); ?>
                     </div><!-- .form-group -->
 
-                    <div class="form-group">
-                            <?php echo $this->Form->input('accepted', array('class' => 'form-control')); ?>
-                    </div><!-- .form-group -->
+
 
                     <div class="form-group">
                         <?php echo $this->Form->label('Objetivo (Meta que você deseja alcançar com o curso)');?>
@@ -67,50 +99,63 @@
                             <?php echo $this->Form->input('telephone', array('class' => 'form-control')); ?>
                     </div><!-- .form-group -->
 
-                    <div class="form-group">
-                        <label for="UserCep">Cep</label>
-                            <div class="input text"><input name="data[User][Address][cep]" class="form-control" type="text" id="UserCep">
-                            <button id='btn btn-small'>Busca Endereço</button>
-                        </div>
-                    </div>
+                    <?php
 
-                    <div class="form-group">
-                        <label for="UserCep">Rua</label>
-                            <div class="input text"><input name="data[User][Address][street]" disabled class="form-control" type="text">
-                        </div>
-                    </div>
+                    $this->Html->script(
+                        array(  'ajax' ),
+                        array(
+                            'inline' => false
+                        )
+                    );
+                    ?>
 
-                    <div class="form-group">
-                        <label for="UserCep">Bairro</label>
-                            <div class="input text"><input name="data[User][Neighborhood][name]" class="form-control" type="text">
+                    <section class="form_endereco" >
+                        <div class="form-group cep">
+                            <label for="UserCep">Cep</label>
+                                <div class="input text"><input name="data[User][Address][cep]" class="form-control" type="text" id="UserCep">
+                                <button  type="button" id='botaoBuscaEndereco' class="btn btn-success">Busca Endereço</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="UserCep">Cidade</label>
-                            <div class="input text"><input name="data[User][City][name]" class="form-control" type="text">
+                        <div class="form-group rua">
+                            <label for="UserCep">Rua</label>
+                                <div class="input text">
+                                    <input name="data[User][Address][street]" disabled class="form-control" type="text" id="idRua">
+                                </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="UserCep">Estado</label>
-                            <input name="data[User][State][name]" class="form-control"  type="text">
-                            <input name="data[User][State][acronym]" class="form-control" type="text">
+                        <div class="form-group bairro">
+                            <label for="UserCep">Bairro</label>
+                                <div class="input text">
+                                    <input disabled name="data[User][Neighborhood][name]" class="form-control" type="text" id="idBairro">
+                                </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="UserCep">Número</label>
-                        <div class="input text"><input name="data[User][Address][number]" class="form-control" type="text">
+                        <div class="form-group cidade">
+                            <label for="UserCep">Cidade</label>
+                                <div class="input text"><input name="data[User][City][name]" disabled class="form-control" type="text" id="idCidade">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="UserCep">Complemento</label>
-                        <div class="input text"><input name="data[User][Address][complement]" class="form-control" type="text">
+                        <div class="form-group estado">
+                            <label for="UserCep">Estado</label>
+                                <input name="data[User][State][name]" disabled  class="form-control"  type="text" id="idEstado">
+                                <input name="data[User][State][acronym]" disabled  class="form-control" type="text" id="idEstadoSigla">
+                            </div>
                         </div>
-                    </div>
 
+                        <div class="form-group numero">
+                            <label for="UserCep">Número</label>
+                            <div class="input text"><input name="data[User][Address][number]" class="form-control" type="number">
+                            </div>
+                        </div>
+
+                        <div class="form-group complemento">
+                            <label for="UserCep">Complemento</label>
+                            <div class="input text"><input name="data[User][Address][complement]" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </section>
                 </fieldset>
             <?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary')); ?>
         <?php echo $this->Form->end(); ?>
