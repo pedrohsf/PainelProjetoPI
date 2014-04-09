@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
     $( "#botaoBuscaEndereco" ).click(function(){
 
         siteLocal =  "http://localhost/trabalho_pi/Endereco/getEndereco/" + $("#UserCep").val();
@@ -22,21 +23,24 @@ $(document).ready(function() {
                    $("#idCidade").val(enderecamaneto.cidade);
                    $("#idEstado").val(enderecamaneto.uf_nome);
                    $("#idEstadoSigla").val(enderecamaneto.uf);
+                   if(enderecamaneto.resultado == 0){
+                       alert("Digite um CEP Válido, o cep "+$("#UserCep").val()+ " não foi encontrado");
+                       $("#UserCep").focus();
+                   }
                 }
             }
         ).fail(function(){
 
-                alert(JSON.stringify(this));
+                alert("Não foi possível buscar este CEP, provavelmente por falha no serviço, por favor entre em contato com a administração.");
             })
             .done(function(){
                 $( "#botaoBuscaEndereco").removeAttr('disabled','disabled');
-            }).
-            always(function(){
-
-
-
             });
 
+
     });
+
+
+
 
 });

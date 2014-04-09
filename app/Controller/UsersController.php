@@ -52,8 +52,30 @@ class UsersController extends AppController {
 	public function add() { 
 		if ($this->request->is('post')) {
 			$this->User->create();
+            // Inicio da decodificação do array
+            // Quando usa-se o web-service foi preciso codificar em utf 8 para poder passar pelo json e ir para o javascript
+            // Quando o formulário volta eu decodifico todas as informações pra ter certeza que estão em utf8
+            $requisicao = $this->request->data['User'] ;
+            foreach($requisicao as $key => $value){
+
+                if(!is_array($requisicao[$key]))
+                    $requisicao[$key] = utf8_decode($value);
+                else
+                    foreach($requisicao[$key] as $key2 => $value2){
+
+                        $requisicao[$key][$key2] = utf8_decode($value2);
+                    }
+
+            }
+            $this->request->data['User'] = $requisicao;
+            // Fim da decodificação do array
+
+            pr( $this->request->data );
+
+            exit();
+
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('User foi salvo com sucesso!'), 'flash/success');
+				$this->Session->setFlash( _('User foi salvo com sucesso!'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('User não pode ser salvo, por favor tente novamente.'), 'flash/error');

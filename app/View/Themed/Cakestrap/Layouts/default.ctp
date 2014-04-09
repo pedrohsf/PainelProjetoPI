@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<?php echo $this->Html->charset(); ?>
-		 
+
 		 <title>Unipam SI</title>
 		 
 		<?php
@@ -34,7 +34,7 @@
 		
 			<?php // echo $this->element('menu/top_menu'); ?>
 			
-			
+		</div>
 			
 		<div class="navbar">
 			<div class="navbar-inner">
@@ -52,7 +52,7 @@
 			</div>
 			
 			<div id="content" class="container">
-			
+
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 			</div><!-- /#header .container -->

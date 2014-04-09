@@ -25,7 +25,9 @@ class EnderecoController extends AppController{
 
         // codifica strings do array para UTF-8 pois o json da como NULL strings não codificadas
         foreach( $retorno as $key => $value){
-            $retorno[$key] = utf8_encode($retorno[$key]);
+            // não passar a key uf_nome para utf-8 pois ela já se encontra em utf-8, tirar esse if fara com que a string trave
+            if(!($key === 'uf_nome'))
+                $retorno[$key] = utf8_encode($retorno[$key]);
         }
 
         $this->set('date',$retorno);

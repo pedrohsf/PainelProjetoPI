@@ -59,7 +59,7 @@
 
     <div class="users form">
 			
-        <?php echo $this->Form->create('User', array('inputDefaults' => array('label' => false), 'role' => 'form')); ?>
+        <?php echo $this->Form->create('User', array('inputDefaults' => array('label' => false), 'role' => 'form','accept-charset'=>'UTF-8')); ?>
                 <fieldset>
                             <h2><?php echo __('Cadastrar Usuário'); ?></h2>
                     <div class="form-group">
@@ -112,7 +112,7 @@
                     <section class="form_endereco" >
                         <div class="form-group cep">
                             <label for="UserCep">Cep</label>
-                                <div class="input text"><input name="data[User][Address][cep]" class="form-control" type="text" id="UserCep">
+                                <div class="input text"><input  name="data[User][Address][cep]" class="form-control" type="text" id="UserCep">
                                 <button  type="button" id='botaoBuscaEndereco' class="btn btn-success">Busca Endereço</button>
                             </div>
                         </div>
@@ -120,27 +120,27 @@
                         <div class="form-group rua">
                             <label for="UserCep">Rua</label>
                                 <div class="input text">
-                                    <input name="data[User][Address][street]" disabled class="form-control" type="text" id="idRua">
+                                    <input name="data[User][Address][street]" readonly class="form-control" type="text" id="idRua">
                                 </div>
                         </div>
 
                         <div class="form-group bairro">
                             <label for="UserCep">Bairro</label>
                                 <div class="input text">
-                                    <input disabled name="data[User][Neighborhood][name]" class="form-control" type="text" id="idBairro">
+                                    <input readonly name="data[User][Neighborhood][name]" class="form-control" type="text" id="idBairro">
                                 </div>
                         </div>
 
                         <div class="form-group cidade">
                             <label for="UserCep">Cidade</label>
-                                <div class="input text"><input name="data[User][City][name]" disabled class="form-control" type="text" id="idCidade">
+                                <div class="input text"><input name="data[User][City][name]" readonly class="form-control" type="text" id="idCidade">
                             </div>
                         </div>
 
                         <div class="form-group estado">
                             <label for="UserCep">Estado</label>
-                                <input name="data[User][State][name]" disabled  class="form-control"  type="text" id="idEstado">
-                                <input name="data[User][State][acronym]" disabled  class="form-control" type="text" id="idEstadoSigla">
+                                <input name="data[User][State][name]" readonly  class="form-control"  type="text" id="idEstado">
+                                <input name="data[User][State][acronym]" readonly  class="form-control" type="text" id="idEstadoSigla">
                             </div>
                         </div>
 
@@ -157,7 +157,7 @@
                         </div>
                     </section>
                 </fieldset>
-            <?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary')); ?>
+            <?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary enviar_infos')); ?>
         <?php echo $this->Form->end(); ?>
 			
 		</div><!-- /.form -->
