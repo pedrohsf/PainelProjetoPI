@@ -1,5 +1,10 @@
 <?php
+
 App::uses('AppController', 'Controller');
+
+require_once('ValidaCadastroEnderecosController.php');
+
+
 /**
  * Users Controller
  *
@@ -14,6 +19,8 @@ class UsersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+    public $validaController;
+
 
 /**
  * index method
@@ -29,6 +36,9 @@ class UsersController extends AppController {
 	
 	
 	}
+
+
+
 /**
  * view method
  *
@@ -69,6 +79,15 @@ class UsersController extends AppController {
             }
             $this->request->data['User'] = $requisicao;
             // Fim da decodificação do array
+
+            $address = $this->request->data['User'];
+
+
+            $this->validaController = New ValidaCadastroEnderecosController();
+            $this->validaController->mergeAddresses($address);
+
+
+
 
             pr( $this->request->data );
 
