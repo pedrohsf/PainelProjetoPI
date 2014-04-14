@@ -21,6 +21,7 @@ class EnderecoController extends AppController{
         // pega o resultado do webservice e implementa ela em uma string
         parse_str($resultado, $retorno);
 
+        // Cria um nome com o nome formal do estado, o web_service não fornece...
         $this->swtichEstados($retorno);
 
         // codifica strings do array para UTF-8 pois o json da como NULL strings não codificadas
@@ -29,7 +30,7 @@ class EnderecoController extends AppController{
             if(!($key === 'uf_nome'))
                 $retorno[$key] = utf8_encode($retorno[$key]);
         }
-
+        // seta na view getEndereço que codifica pra Jason e para ser injetado como objeto no javascript e ser recuperado os campos via javascript
         $this->set('date',$retorno);
 
     }

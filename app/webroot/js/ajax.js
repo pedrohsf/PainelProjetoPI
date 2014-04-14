@@ -17,6 +17,7 @@ $(document).ready(function() {
                 var retorno = jQuery.parseJSON( data );
 
                 if( retorno.success ){
+                    // Quando encontra o endereço seta todos os campos
                    enderecamaneto = retorno.html;
                    $("#idRua").val(enderecamaneto.tipo_logradouro+" "+enderecamaneto.logradouro);
                    $("#idBairro").val(enderecamaneto.bairro);

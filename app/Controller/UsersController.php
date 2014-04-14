@@ -82,25 +82,28 @@ class UsersController extends AppController {
 
             $address = $this->request->data['User'];
 
-
+            // OBjeto que cuida do cadastro dos endereços , se ja existir o mesmo endereço igualzinho cadastrado, ele retorna o id...
             $this->validaController = New ValidaCadastroEnderecosController();
-            $this->validaController->mergeAddresses($address);
+            // pega o id do endereço que foi informado.
+            $idAddress = $this->validaController->mergeAddresses($address);
 
+            $saveUser['User'] = $this->request->data['User'];
 
+            unset($saveUser['User']['Address']);
+            unset($saveUser['User']['Neighborhood']);
+            unset($saveUser['User']['City']);
+            unset($saveUser['User']['State']);
+            $saveUser['User']['address_id'] = $idAddress;
 
-
-            pr( $this->request->data );
-
-            exit();
-
-			if ($this->User->save($this->request->data)) {
+            if ($this->User->save($saveUser)) {
 				$this->Session->setFlash( _('User foi salvo com sucesso!'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('User não pode ser salvo, por favor tente novamente.'), 'flash/error');
 			}
 		}
-	}
+
+    }
 
 /**
  * edit method
@@ -128,7 +131,7 @@ class UsersController extends AppController {
 	}
 
 	
-	public function busca_cep($cep){  
+	public function busca_cep($cep){
 		$resultado = @file_get_contents('http://republicavirtual.com.br/web_cep.php?cep='.urlencode($cep).'&formato=query_string');  
 		if(!$resultado){  
 			$resultado = "&resultado=0&resultado_txt=erro+ao+buscar+cep";  

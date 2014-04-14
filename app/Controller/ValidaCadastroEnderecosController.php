@@ -73,6 +73,7 @@
          * Função principal que a partir dela é cadastrado estado, cidade e bairro caso não existam.
          */
         public function mergeAddresses($data){
+
             $cep = $data['Address']['cep'];
             $street = $data['Address']['street'];
             $number = $data['Address']['number'];
@@ -85,6 +86,7 @@
                     $this->mergeState($data['State']) // função que retorna id do estado , cadastrando se não existir
                 )
             );
+            $address = $this->Address->find('first',array('conditions'=>array('Address.cep'=>$cep,'Address.street'=>$street,'Address.number'=>$number,'Address.complement'=>$complement,'Address.neighborhood_id'=>$neightborhood_id)));
 
             $dataSave = array('Address'=>array(
                 'cep'=> $cep,
@@ -94,7 +96,10 @@
                 'neighborhood_id'=> $neightborhood_id
             ));
 
-            $this->Address->Save($dataSave);
+            if(empty($address) OR $address == null){
+                $this->Address->Save($dataSave);
+            }
+
 
             return $this->Address->find('first',array('conditions'=>array('Address.cep'=>$cep,'Address.street'=>$street,'Address.number'=>$number,'Address.complement'=>$complement,'Address.neighborhood_id'=>$neightborhood_id)))['Address']['id'];
 
