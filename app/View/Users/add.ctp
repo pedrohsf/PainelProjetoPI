@@ -84,6 +84,10 @@
                     </div><!-- .form-group -->
 
 
+                    <div class="form-group">
+                        <?php echo $this->Form->label('Período Letivo');?>
+                        <?php echo $this->Form->input('periodo_letivo', array('class' => 'form-control','options'=>array('1°'=>'1°','2°'=>'2°','3°'=>'3°','4°'=>'4°','5°'=>'5°','6°'=>'6°','7°'=>'7°','8°'=>'8°'))); ?>
+                    </div><!-- .form-group -->
 
                     <div class="form-group">
                         <?php echo $this->Form->label('Objetivo (Meta que você deseja alcançar com o curso)');?>

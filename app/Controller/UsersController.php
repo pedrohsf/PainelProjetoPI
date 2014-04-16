@@ -45,7 +45,8 @@ class UsersController extends AppController {
  */
 	public function index() {
 		$this->User->recursive = 0;
-		$this->set('users', $this->paginate());
+        $this->paginate = array ('User' => array('conditions' => array('User.id !=' => $this->Auth->user('id') )));
+        $this->set('users', $this->paginate());
 	}
 
     /*
@@ -80,6 +81,55 @@ class UsersController extends AppController {
         $this->redirect($this->Auth->logout());
     }
 
+
+    /*
+     * Libera o registro do aluno
+     */
+
+    public function liberarRegistro($id = null){
+        if(!empty($id) AND $id != null){
+            if($this->userIsSupervisor()){
+                if (!$this->User->exists($id)) {
+                    throw new NotFoundException(__('User está inválido.'));
+                }
+                $this->User->id = $id;
+
+                if ($this->User->save(array('User'=>array('accepted'=>1)))) {
+                    $this->Session->setFlash(__('Usuário liberado para acessar o portal!'), 'flash/success');
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('User não pode ser liberado, por favor tente novamente.'), 'flash/error');
+                }
+
+            }
+        }else{
+            throw new NotFoundException(__('User está inválido.'));
+        }
+    }
+
+    /*
+     * Bloqueia o registro do usuário
+     */
+    public function bloquearRegistro($id = null){
+        if(!empty($id) AND $id != null){
+            if($this->userIsSupervisor()){
+                if (!$this->User->exists($id)) {
+                    throw new NotFoundException(__('User está inválido.'));
+                }
+                $this->User->id = $id;
+
+                if ($this->User->save(array('User'=>array('accepted'=>0)))) {
+                    $this->Session->setFlash(__('Usuário bloqueado para acessar o portal!'), 'flash/success');
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('User não pode ser bloqueado, por favor tente novamente.'), 'flash/error');
+                }
+
+            }
+        }else{
+            throw new NotFoundException(__('User está inválido.'));
+        }
+    }
 
 
 /**

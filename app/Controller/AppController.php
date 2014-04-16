@@ -26,6 +26,21 @@ class AppController extends Controller {
         )
     );
 
+    /*
+     * Função criada para verificar se usuário é um supervisor
+     */
+
+    public function userIsSupervisor(){
+        if($this->Auth->loggedIn()){
+
+            if($this->Auth->user('role') === 'Supervisor'){
+                return true;
+            }
+
+        }
+        return false;
+    }
+
 
 	public function beforeFilter(){
 
@@ -36,6 +51,7 @@ class AppController extends Controller {
         $this->AppAction = strtolower($this->params['action']);
         $this->AppController = strtolower($this->params['controller']);
 
+        $this->set('logado',$this->Auth->loggedIn());
         $this->set('admLocal',$this->admLocal);
 		$this->set('controller',strtolower($this->params['controller']));
 	}

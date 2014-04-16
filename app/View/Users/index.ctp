@@ -36,6 +36,11 @@
                                 <?php echo $this->Html->link(__('Detalhar'), array('action' => 'view', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
                                 <?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
                                 <?php echo $this->Form->postLink(__('Apagar'), array('action' => 'delete', $user['User']['id']), array('class' => 'btn btn-default btn-xs'), __('Tem certeza que deseja apagar este item? %s?', $user['User']['id'])); ?>
+                                <?php if($user['User']['accepted']): ?>
+                                    <?php echo $this->Html->link(__('Bloquear Registro'), array('action' => 'bloquearRegistro', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
+                                <?php else: ?>
+                                    <?php echo $this->Html->link(__('Liberar Registro'), array('action' => 'liberarRegistro', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
+                                <?php endif; ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -1,7 +1,5 @@
 <?php
 App::uses('AppModel', 'Model');
-App::uses('AuthComponent', 'Controller/Component');
-
 /**
  * User Model
  *
@@ -67,7 +65,12 @@ class User extends AppModel {
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			), 
+			),
+            'isUnique' => array(
+                'rule' => 'isUnique',
+                'message' => 'Este e-mail já está cadastrado, por favor escolha outro.'
+
+            )
 		),
 		'address_id' => array(
 			'numeric' => array(
@@ -97,15 +100,6 @@ class User extends AppModel {
 			'order' => ''
 		)
 	);
-
-    public function beforeSave($options = array()) {
-        if (isset($this->data[$this->alias]['password'])) {
-            $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-        }
-
-        return true;
-    }
-
 
 /**
  * hasMany associations

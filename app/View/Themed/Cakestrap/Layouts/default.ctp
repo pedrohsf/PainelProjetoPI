@@ -30,11 +30,7 @@
 	
 
 
-		<div id="main-container">
-		
-			<?php // echo $this->element('menu/top_menu'); ?>
-			
-		</div>
+
 			
 		<div class="navbar">
 			<div class="navbar-inner">
@@ -50,7 +46,13 @@
 				</div>
 			
 			</div>
-			
+            <?php if($logado): ?>
+            <div id="main-container">
+
+                <?php  echo $this->element('menu/top_menu'); ?>
+
+            </div>
+            <?php endif;?>
 			<div id="content" class="container">
 
 				<?php echo $this->Session->flash(); ?>
