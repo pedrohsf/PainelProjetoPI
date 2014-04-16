@@ -4,6 +4,11 @@
 class EnderecoController extends AppController{
 
 
+    public function beforeFilter(){
+        parent::beforeFilter();
+        // libera o web_service pra quem não esta logado ou seja para um user ser cadastrado.
+        $this->Auth->allow('getEndereco');
+    }
 
     public function getEndereco($cep = NULL){
 

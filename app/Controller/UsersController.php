@@ -18,9 +18,25 @@ class UsersController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
-    public $validaController;
+    // receber a instancia da classe que valida o endereço
+    public $validaCadastroEnderecoController;
 
+    public function beforeFilter(){
+        parent::beforeFilter();
+        // libera o cadastro de usuario para quem não está logado no painel
+        $this->Auth->allow('add');
+        // caso ele ja esteja logado não logar novamente, redirecionar a index
+        if($this->Auth->loggedIn()){
+            if($this->AppAction === 'add'){
+                $this->redirect(array('action'=>'index'));
+            }
+
+
+        }
+
+
+
+    }
 
 /**
  * index method
@@ -31,11 +47,38 @@ class UsersController extends AppController {
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
-	
-	public function login(){
-	
-	
-	}
+
+    /*
+     * Action de login
+     * @return void
+     */
+    public function login() {
+
+        // Se a requisição for um post
+        if($this->request->is('post')){
+            // Tenta logar, se logar retorna um true, e todos os dados do user ficam no objeto AUTH
+            if ($this->Auth->login()) {
+                // se usuário não estiver sido confirmado como aceito, ele não deixa entrar
+                if(! $this->Auth->user('accepted')){
+                    $this->Session->setFlash( _('Seu cadastro ainda não foi confirmado, por favor entre em contato com o supervisor!'), 'flash/error');
+                    $this->redirect(array('action' => 'logout'));
+                }
+                // Redireciona para pagina definida na configuração do componente
+                $this->redirect($this->Auth->redirect());
+            } else {
+                // se não conseguir entrar, é por que usuario ou senha esetão inválidos
+                $this->Session->setFlash('Usuário ou senha estão inválidos, por favor tente novamente.', 'flash/error');
+            }
+            // Se já estiver logado, não tem necessidade de mostrar a tela de login novamente
+        }else if($this->Auth->loggedIn()){
+            $this->Session->setFlash(__('Você já está logado no sistema.'), 'flash/error');
+            $this->redirect($this->Auth->redirect());
+        }
+    }
+
+    public function logout() {
+        $this->redirect($this->Auth->logout());
+    }
 
 
 
@@ -79,13 +122,13 @@ class UsersController extends AppController {
             }
             $this->request->data['User'] = $requisicao;
             // Fim da decodificação do array
-
+            // Pega o endereço a ser cadastrado
             $address = $this->request->data['User'];
 
             // OBjeto que cuida do cadastro dos endereços , se ja existir o mesmo endereço igualzinho cadastrado, ele retorna o id...
-            $this->validaController = New ValidaCadastroEnderecosController();
+            $this->validaCadastroEnderecoController = New ValidaCadastroEnderecosController();
             // pega o id do endereço que foi informado.
-            $idAddress = $this->validaController->mergeAddresses($address);
+            $idAddress = $this->validaCadastroEnderecoController->mergeAddresses($address);
 
             $saveUser['User'] = $this->request->data['User'];
 
@@ -131,23 +174,7 @@ class UsersController extends AppController {
 	}
 
 	
-	public function busca_cep($cep){
-		$resultado = @file_get_contents('http://republicavirtual.com.br/web_cep.php?cep='.urlencode($cep).'&formato=query_string');  
-		if(!$resultado){  
-			$resultado = "&resultado=0&resultado_txt=erro+ao+buscar+cep";  
-		}  
-		parse_str($resultado, $retorno);   
-		return $retorno;  
-	}  
-	
-	
-	public function buscar_o_cep(){ 
-		$resultado_busca = $this->busca_cep('38700-254');  
 
-
-		print_r ($resultado_busca);
-		exit();
-	 }
 	
 /**
  * delete method
