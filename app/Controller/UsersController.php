@@ -21,16 +21,25 @@ class UsersController extends AppController {
     // receber a instancia da classe que valida o endereço
     public $validaCadastroEnderecoController;
 
+    /*
+     * Before Filter é chamado antes de qualquer validação, cadastro ou renderização da pagina...
+     */
     public function beforeFilter(){
         parent::beforeFilter();
         // libera o cadastro de usuario para quem não está logado no painel
         $this->Auth->allow('add');
         // caso ele ja esteja logado não logar novamente, redirecionar a index
         if($this->Auth->loggedIn()){
+            // não deixa fazer cadastro quando se está logado
             if($this->AppAction === 'add'){
                 $this->redirect(array('action'=>'index'));
             }
-
+            // não deixa alunos entrarem na área administrativa do supervisor
+            if($this->AppAction === 'index'){
+                if($this->Auth->user('role') !== 'Supervisor'){
+                    $this->redirect(array('action'=>'painelAluno'));
+                }
+            }
 
         }
 
@@ -63,18 +72,26 @@ class UsersController extends AppController {
                 if(! $this->Auth->user('accepted')){
                     $this->Session->setFlash( _('Seu cadastro ainda não foi confirmado, por favor entre em contato com o supervisor!'), 'flash/error');
                     $this->redirect(array('action' => 'logout'));
+                }else{
+                    // se for supervisor direciona para painel do supervisor
+                    if($this->Auth->user('role') === 'Supervisor'){
+                        $this->redirect(array('action'=>'index'));
+                        // se não direciona para painel do aluno
+                    }else{
+                        $this->redirect(array('action'=>'painelAluno'));
+                    }
                 }
-                // Redireciona para pagina definida na configuração do componente
-                $this->redirect($this->Auth->redirect());
             } else {
                 // se não conseguir entrar, é por que usuario ou senha esetão inválidos
                 $this->Session->setFlash('Usuário ou senha estão inválidos, por favor tente novamente.', 'flash/error');
             }
             // Se já estiver logado, não tem necessidade de mostrar a tela de login novamente
         }else if($this->Auth->loggedIn()){
+            
             $this->Session->setFlash(__('Você já está logado no sistema.'), 'flash/error');
             $this->redirect($this->Auth->redirect());
         }
+
     }
 
     public function logout() {
@@ -189,8 +206,8 @@ class UsersController extends AppController {
             $saveUser['User']['address_id'] = $idAddress;
 
             if ($this->User->save($saveUser)) {
-				$this->Session->setFlash( _('User foi salvo com sucesso!'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash( _('User foi salvo com sucesso, espere até que sua inscrição seja avaliada e liberada por um supervisor.'), 'flash/success');
+				$this->redirect(array('action' => 'login'));
 			} else {
 				$this->Session->setFlash(__('User não pode ser salvo, por favor tente novamente.'), 'flash/error');
 			}
@@ -223,7 +240,15 @@ class UsersController extends AppController {
 		}
 	}
 
-	
+
+    /*
+     * Painel do aluno action
+     *
+     */
+
+    public function painelAluno(){
+
+    }
 
 	
 /**
