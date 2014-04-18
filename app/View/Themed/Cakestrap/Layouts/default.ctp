@@ -47,6 +47,7 @@
 			
 			</div>
             <?php if($logado): ?>
+
             <div id="main-container">
 
                 <?php  echo $this->element('menu/top_menu'); ?>
@@ -72,7 +73,37 @@
 				</small>
 			</div><!-- /.well well-sm -->
 		</div><!-- /.container -->
-		
+
+        <!-- Modal Image User Change -->
+        <div class="modal fade" id="imageModalChange" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Trocar imagem sua imagem</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" action="<?= $admLocal ?>images/changeimage" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="exampleInputFile">Envie uma imagem.</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Sua imagem deve conter apenas você, com roupas formais, ela vai ser avaliada por um supervisor.</p>
+                                <p class="help-block">Tamanho Máximo: EX:MG Tipos aceitos : .jpg , .png , .jpeg</p>
+                            </div>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-primary">Atualizar Imagem !</button>
+                        </form>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Modal Image User Change -->
+
+
 	</body>
 
 </html>

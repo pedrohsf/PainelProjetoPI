@@ -87,7 +87,7 @@ class UsersController extends AppController {
             }
             // Se já estiver logado, não tem necessidade de mostrar a tela de login novamente
         }else if($this->Auth->loggedIn()){
-            
+
             $this->Session->setFlash(__('Você já está logado no sistema.'), 'flash/error');
             $this->redirect($this->Auth->redirect());
         }
