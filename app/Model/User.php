@@ -117,7 +117,7 @@ class User extends AppModel {
 		'File' => array(
 			'className' => 'File',
 			'foreignKey' => 'user_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
@@ -130,7 +130,7 @@ class User extends AppModel {
 		'Formation' => array(
 			'className' => 'Formation',
 			'foreignKey' => 'user_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
@@ -143,7 +143,7 @@ class User extends AppModel {
 		'ProfessionalExperience' => array(
 			'className' => 'ProfessionalExperience',
 			'foreignKey' => 'user_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
@@ -156,7 +156,7 @@ class User extends AppModel {
 		'Recommendation' => array(
 			'className' => 'Recommendation',
 			'foreignKey' => 'user_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
