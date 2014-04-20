@@ -247,6 +247,10 @@ class UsersController extends AppController {
      */
 
     public function painelAluno(){
+        $userInfo = array();
+        $userInfo['name'] = $this->Auth->user('name');
+        $userInfo['email'] = $this->Auth->user('email');
+
 
     }
 

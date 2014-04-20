@@ -37,7 +37,7 @@
 				<div class="container text-center ">
 			 
 				  
-				  <img    src="img/logo_unipam.png"   class="img-rounded unipam_logo"  />
+				  <img    src="<?= $admLocal ?>img/logo_unipam.png"   class="img-rounded unipam_logo"  />
 				  <div class="container">
 						<a class="btn btn-info btn-mini botao_aluno " href="index.html"><i class="icon-globe icon-white"></i> Voltar ao site </a>
 				  </div>
@@ -80,7 +80,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Trocar imagem sua imagem</h4>
+                        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-picture"></span> Trocar imagem sua imagem</h4>
                     </div>
                     <div class="modal-body">
                         <form role="form" action="<?= $admLocal ?>images/changeimage" method="post" enctype="multipart/form-data">
@@ -94,7 +94,7 @@
                     </div>
                     <div class="modal-footer">
 
-                        <button type="submit" class="btn btn-primary">Atualizar Imagem !</button>
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-cloud-upload"></span> Atualizar Imagem !</button>
                         </form>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                     </div>
