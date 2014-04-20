@@ -58,8 +58,17 @@ class AppController extends Controller {
         $this->AppAction = strtolower($this->params['action']);
         $this->AppController = strtolower($this->params['controller']);
 
+        // se estiver logado envia se o usuário é um supervisor ou não para todas as views
+        if($this->Auth->loggedIn()){
+
+            $this->set('supervisor', ($this->Auth->user('role') === 'Supervisor' ) ? TRUE : FALSE );
+
+        }
+        // seta variavel em todas as views para saber se user está ou não online
         $this->set('logado',$this->Auth->loggedIn());
+        // seta variavel de endereço local do painel em todas as views para achar arquivos
         $this->set('admLocal',$this->admLocal);
+        // seta variavel de controller em todas as views com o controller atual em minúsculo
 		$this->set('controller',strtolower($this->params['controller']));
 	}
 	

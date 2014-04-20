@@ -6,7 +6,7 @@
 
 		<div class="users index">
 		
-			<h2><?php echo __('Users'); ?></h2>
+			<h2><?php echo __('Usuários'); ?></h2>
 			
 			<div class="table-responsive">
 				<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered">
@@ -34,7 +34,6 @@
                             <td><?php echo h(date('d-m-Y',strtotime($user['User']['modified']))); ?>&nbsp;</td>
                             <td class="actions">
                                 <?php echo $this->Html->link(__('Detalhar'), array('action' => 'view', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
-                                <?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
                                 <?php echo $this->Form->postLink(__('Apagar'), array('action' => 'delete', $user['User']['id']), array('class' => 'btn btn-default btn-xs'), __('Tem certeza que deseja apagar este item? %s?', $user['User']['id'])); ?>
                                 <?php if($user['User']['accepted']): ?>
                                     <?php echo $this->Html->link(__('Bloquear Registro'), array('action' => 'bloquearRegistro', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>

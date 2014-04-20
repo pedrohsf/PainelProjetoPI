@@ -101,9 +101,14 @@ class UsersController extends AppController {
 
     /*
      * Libera o registro do aluno
+     * Primeiro parametro id do usuário segundo parametro se retorna ou não para view do user
+     *
+     * Ex: liberarRegistro(6,true) // libera o registro e retorna para users/view/6
+     * Ex: liberarRegistro(6) // libera o registro e retorna para users/index
+     *
      */
 
-    public function liberarRegistro($id = null){
+    public function liberarRegistro($id = null, $view = null){
         if(!empty($id) AND $id != null){
             if($this->userIsSupervisor()){
                 if (!$this->User->exists($id)) {
@@ -113,6 +118,9 @@ class UsersController extends AppController {
 
                 if ($this->User->save(array('User'=>array('accepted'=>1)))) {
                     $this->Session->setFlash(__('Usuário liberado para acessar o portal!'), 'flash/success');
+                    if($view){
+                        $this->redirect(array('action' => 'view',$id));
+                    }
                     $this->redirect(array('action' => 'index'));
                 } else {
                     $this->Session->setFlash(__('User não pode ser liberado, por favor tente novamente.'), 'flash/error');
@@ -124,10 +132,16 @@ class UsersController extends AppController {
         }
     }
 
+
+
     /*
      * Bloqueia o registro do usuário
+     * Primeiro parametro id do usuário, segundo parametro se verdadeiro retorna a view de user
+     *
+     * bloquearRegistro (2,true) bloqueia o registro e retorna para users/view/2
+     * bloquearRegistro (2) bloqueia o registro e retorna para users/index
      */
-    public function bloquearRegistro($id = null){
+    public function bloquearRegistro($id = null, $view = null){
         if(!empty($id) AND $id != null){
             if($this->userIsSupervisor()){
                 if (!$this->User->exists($id)) {
@@ -137,6 +151,9 @@ class UsersController extends AppController {
 
                 if ($this->User->save(array('User'=>array('accepted'=>0)))) {
                     $this->Session->setFlash(__('Usuário bloqueado para acessar o portal!'), 'flash/success');
+                    if($view){
+                        $this->redirect(array('action' => 'view',$id));
+                    }
                     $this->redirect(array('action' => 'index'));
                 } else {
                     $this->Session->setFlash(__('User não pode ser bloqueado, por favor tente novamente.'), 'flash/error');
@@ -215,31 +232,6 @@ class UsersController extends AppController {
 
     }
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-        $this->User->id = $id;
-		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('User está inválido.'));
-		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('User foi salvo com sucesso!'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('User não pode ser salvo, por favor tente novamente.'), 'flash/error');
-			}
-		} else {
-			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-			$this->request->data = $this->User->find('first', $options);
-		}
-	}
-
 
     /*
      * Painel do aluno action
@@ -247,11 +239,9 @@ class UsersController extends AppController {
      */
 
     public function painelAluno(){
-        $userInfo = array();
-        $userInfo['name'] = $this->Auth->user('name');
-        $userInfo['email'] = $this->Auth->user('email');
 
-
+        $usuario = $this->User->find('first',array('conditions'=>array('User.id'=>$this->Auth->user('id'))));
+        $this->set('usuario',$usuario);
     }
 
 	
