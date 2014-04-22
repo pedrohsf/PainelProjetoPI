@@ -47,7 +47,7 @@ var $defaultOptions = array(
 'zoomCrop' => false, // Whether to use ZoomCrop or not with PHPThumb
 'thumbnails' => true,
 'thumbsizes' => array(
-// Place any custom thumbsize in model config instead, 
+// Place any custom thumbsize in model config instead,
 ),
 'thumbnailQuality' => 75, // Global Thumbnail Quality
 'thumbnailDir' => 'thumb',

@@ -11,7 +11,7 @@
                 <li><a href="<?= $admLocal ?>Users/logout"><span class="glyphicon glyphicon-off"></span> Sair Do Painel</a></li>
             <?php else: ?>
                 <li   <?= ($controller === 'users')? 'class="active"' : '' ?> ><a href="<?= $admLocal ?>Users/painelAluno"><span class="glyphicon glyphicon-user"></span> Usuário</a></li>
-                <li   <?= ($controller === 'files')? 'class="active"' : '' ?>><a href="<?= $admLocal ?>Files/"><span class="glyphicon glyphicon-book"></span> Trabalhos</a></li>
+                <li   <?= ($controller === 'files')? 'class="active"' : '' ?>><a href="<?= $admLocal ?>Trabalho/"><span class="glyphicon glyphicon-book"></span> Trabalhos</a></li>
                 <li   <?= ($controller === 'professionalexperiences')? 'class="active"' : '' ?>><a href="<?= $admLocal ?>ProfessionalExperiences/"><span class="glyphicon glyphicon-folder-open"></span> Experiências Profissional</a></li>
             <?php endif; ?>
 
@@ -25,7 +25,7 @@
 
                             <li><a href="#" data-toggle="modal" data-target="#imageModalChange" ><span class="glyphicon glyphicon-picture"></span> Trocar Imagem</a></li>
                             <li><a href="<?= $admLocal ?>Users/painelAluno""><span class="glyphicon glyphicon-user"></span> Usuário</a></li>
-                            <li><a href="<?= $admLocal ?>Files/index""><span class="glyphicon glyphicon-book"></span> Trabalhos</a></li>
+                            <li><a href="<?= $admLocal ?>Trabalho/index""><span class="glyphicon glyphicon-book"></span> Trabalhos</a></li>
                             <li><a href="<?= $admLocal ?>ProfessionalExperiences/"><span class="glyphicon glyphicon-folder-open"></span> Experiências Profissional</a></li>
 
                         <li class="divider"></li>

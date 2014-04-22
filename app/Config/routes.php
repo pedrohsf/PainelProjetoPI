@@ -28,8 +28,6 @@
  */
 	Router::connect('/', array('controller' => 'users', 'action' => 'login'));
 
-    Router::connect('/Files**', array('controller' => 'files', 'action' => 'index'));
-
 
 /**
  * ...and connect the rest of 'Pages' controller's urls.

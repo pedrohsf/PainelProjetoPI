@@ -4,24 +4,6 @@ App::uses('AppModel', 'Model');
 
 class Update extends AppModel {
 
-    public $actsAs = array(
-        'MeioUpload' => array(
-            'filename' => array(
-                'maxSize' => '20 MB',
-                'dir' => 'files{DS}uploads',
-                'allowedMime' => array(
-                    'application/x-rar-compressed',
-                    'application/octet-stream',
-                    'application/zip',
-                ),
-                'allowedExt' => array(
-                    '.rar',
-                    '.zip'
-                ),
-
-            ),
-        ),
-    );
 
 
     public $validate = array(
