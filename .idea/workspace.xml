@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b5a547-db5a-457f-89c2-4939df552d1b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\Controller\FilesController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\View\Files\index.ctp" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\produto\frameMarker_001-0.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\produto\frameMarker_001.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" afterPath="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Update.php" afterPath="$PROJECT_DIR$/app/Model/Update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/User.php" afterPath="$PROJECT_DIR$/app/Model/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Config/routes.php" afterPath="$PROJECT_DIR$/app/Config/routes.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\files\uploads\Leatrix_Latency_Fix_1_23.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Project.php" afterPath="$PROJECT_DIR$/app/Model/Project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/ProjectsController.php" afterPath="$PROJECT_DIR$/app/Controller/ProjectsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Projects/edit.ctp" afterPath="$PROJECT_DIR$/app/View/Projects/edit.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Projects/index.ctp" afterPath="$PROJECT_DIR$/app/View/Projects/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" afterPath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Projects/view.ctp" afterPath="$PROJECT_DIR$/app/View/Projects/view.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trabalho_pi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398119055402" ignored="false" />
+    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398291262650" ignored="false" />
     <file path="/NewsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1396631817153" ignored="false" />
     <file path="/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397064287363" ignored="false" />
     <file path="/add.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397679989718" ignored="false" />
@@ -28,21 +26,22 @@
     <file path="/ValidaCadastroEnderecos.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397176127229" ignored="false" />
     <file path="/ValidaCadastroEnderecosController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397502652660" ignored="false" />
     <file path="$PROJECT_DIR$/app/webroot/js/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397668788496" ignored="false" />
-    <file path="/index.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398123273912" ignored="false" />
-    <file path="/AppController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398006768055" ignored="false" />
+    <file path="/index.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398298887978" ignored="false" />
+    <file path="/AppController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398293806690" ignored="false" />
     <file path="/login.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397739227473" ignored="false" />
-    <file path="/top_menu.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398119192068" ignored="false" />
+    <file path="/top_menu.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398291486672" ignored="false" />
     <file path="/User.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026778365" ignored="false" />
     <file path="/FilesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398120145614" ignored="false" />
     <file path="/ProfessionalExperiences.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397953613776" ignored="false" />
     <file path="/UpdatesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398006480046" ignored="false" />
-    <file path="/view.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398008193015" ignored="false" />
+    <file path="/view.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398299984857" ignored="false" />
     <file path="/SkillsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398009507720" ignored="false" />
     <file path="/Update.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026528922" ignored="false" />
     <file path="/UpdateDescription.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026708322" ignored="false" />
     <file path="/File.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398124050034" ignored="false" />
     <file path="/MeioUploadBehavior.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398122540918" ignored="false" />
     <file path="/TrabalhoController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398124112288" ignored="false" />
+    <file path="/ProjectsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398299041744" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +61,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="top_menu.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="65" selection-start="2453" selection-end="2453" vertical-scroll-proportion="-9.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Project.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Model/Project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="-12.615385">
+            <state line="23" column="14" selection-start="606" selection-end="606" vertical-scroll-proportion="-15.038462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ctp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ProjectsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ProjectsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="120" selection-start="4073" selection-end="4073" vertical-scroll-proportion="0.5953757">
+              <folding>
+                <marker date="1398300081575" expanded="true" signature="3793:3996" placeholder="..." />
+                <marker date="1398300081575" expanded="true" signature="3911:5120" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Projects/edit.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Projects/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="38" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.39306358">
+            <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="-27.153847">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Projects/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="36" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-4.923077">
+              <folding>
+                <marker date="1398298924801" expanded="true" signature="83:139" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="114:139" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="197:309" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="284:309" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="297:309" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="895:992" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="982:992" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="1615:1766" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="2474:2538" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="2481:2538" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="2640:2681" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="3449:3484" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="3559:3610" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="3828:3879" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="4210:4261" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="4409:4460" placeholder="..." />
+                <marker date="1398298924801" expanded="true" signature="4613:4664" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,12 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Model/UpdateDescription.php" />
-        <option value="$PROJECT_DIR$/app/View/Files/index.ctp" />
-        <option value="$USER_HOME$/Desktop/renato/alunos_si_bd (1).sql" />
-        <option value="$PROJECT_DIR$/app/Controller/FilesController.php" />
-        <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
-        <option value="$PROJECT_DIR$/app/Model/Update.php" />
         <option value="$PROJECT_DIR$/app/Config/routes.php" />
         <option value="$PROJECT_DIR$/app/View/Trabalho/add.ctp" />
         <option value="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" />
@@ -121,8 +153,14 @@
         <option value="$PROJECT_DIR$/app/Model/Arquivo.php" />
         <option value="$PROJECT_DIR$/app/Controller/TrabalhoController.php" />
         <option value="$PROJECT_DIR$/app/Model/User.php" />
-        <option value="$PROJECT_DIR$/app/Model/Project.php" />
         <option value="$PROJECT_DIR$/app/View/Projects/add.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
+        <option value="$PROJECT_DIR$/app/Model/Project.php" />
+        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/app/View/Projects/edit.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Projects/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Projects/view.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/ProjectsController.php" />
       </list>
     </option>
   </component>
@@ -224,6 +262,148 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +587,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20757575" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21060605" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -483,115 +663,147 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="79" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.42696628">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/ValidaCadastroEnderecosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6871402">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/AppModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Assinante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Produto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="101" selection-end="171" vertical-scroll-proportion="0.10861423">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.2994129">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="8" selection-start="2439" selection-end="2439" vertical-scroll-proportion="1.1024096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/UpdateDescription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.4793233">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1248" column="17" selection-start="36022" selection-end="36027" vertical-scroll-proportion="0.7630058">
+        <state line="42" column="20" selection-start="1294" selection-end="1301" vertical-scroll-proportion="0.39306358">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="65" selection-start="2453" selection-end="2453" vertical-scroll-proportion="-9.0">
-          <folding />
+        <state line="4" column="42" selection-start="152" selection-end="152" vertical-scroll-proportion="-0.08092485">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="35" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.24812031">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Projects/edit.ctp">
+    <entry file="file://$PROJECT_DIR$/app/Controller/ProfessionalExperiencesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/codigosUpload.txt">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/tables.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="54" selection-end="1135" vertical-scroll-proportion="0.03046595">
+        <state line="199" column="21" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Users/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="27" selection-start="1020" selection-end="1202" vertical-scroll-proportion="0.22928709">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="35" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.35150376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="7" selection-start="1401" selection-end="1509" vertical-scroll-proportion="0.3603083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="758" selection-end="981" vertical-scroll-proportion="0.31766918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Users/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/Project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="-12.615385">
+        <state line="23" column="14" selection-start="606" selection-end="606" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Cake/basics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="549" column="13" selection-start="14475" selection-end="14475" vertical-scroll-proportion="0.34962407">
+          <folding>
+            <marker date="1376246254000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1376246254000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Projects/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Projects/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.39306358">
+        <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="-27.153847">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Projects/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-4.923077">
+          <folding>
+            <marker date="1398298924801" expanded="true" signature="83:139" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="114:139" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="197:309" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="284:309" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="297:309" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="895:992" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="982:992" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="1615:1766" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="2474:2538" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="2481:2538" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="2640:2681" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="3449:3484" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="3559:3610" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="3828:3879" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="4210:4261" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="4409:4460" placeholder="..." />
+            <marker date="1398298924801" expanded="true" signature="4613:4664" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Projects/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="43" selection-start="534" selection-end="534" vertical-scroll-proportion="-1.194605">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#td#1;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ProjectsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="120" selection-start="4073" selection-end="4073" vertical-scroll-proportion="0.5953757">
+          <folding>
+            <marker date="1398300081575" expanded="true" signature="3793:3996" placeholder="..." />
+            <marker date="1398300081575" expanded="true" signature="3911:5120" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

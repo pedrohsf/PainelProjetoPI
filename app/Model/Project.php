@@ -10,23 +10,15 @@ class Project extends AppModel {
     public $actsAs = array(
         'MeioUpload' => array(
             'filename' => array(
-                'maxSize' => '4 MB',
+                'maxSize' => 20971520 , // 2MG * 10: 20 MG
                 'dir' => 'files{DS}uploads',
                 'allowedMime' => array(
-                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
                     'application/octet-stream',
-                    'application/msword',
-                    'application/pdf',
-                    'text/plain',
-                    'application/vnd.oasis.opendocument.text',
+                    'application/x-rar-compressed'
                 ),
                 'allowedExt' => array(
-                    '.docx',
-                    '.doc',
-                    '.pdf',
-                    '.txt',
-                    '.odt',
                     '.zip',
+                    '.rar'
                 ),
 
             ),
