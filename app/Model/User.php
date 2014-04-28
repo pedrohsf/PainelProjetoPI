@@ -18,6 +18,23 @@ class User extends AppModel {
  *
  * @var array
  */
+    var $actsAs = array(
+        'MeioUpload' => array(
+            'filename' => array(
+                'thumbsizes' => array(
+                    'pequena' => array(
+                        'width' => 48,
+                        'height' => 48
+                    ),
+                    'medio' => array(
+                        'width' => 180,
+                        'height' => 180
+                    )
+                )
+            )
+        )
+    );
+
 	public $validate = array(
 		'username' => array(
 			'notempty' => array(

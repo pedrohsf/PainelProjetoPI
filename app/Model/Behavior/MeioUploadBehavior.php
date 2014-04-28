@@ -966,8 +966,15 @@ $params);
 $test = App::import('Vendor','phpthumb', array('file' => 'phpThumb' . DS . 'phpthumb.class.php'));
 
 // Configuring thumbnail settings
-$phpThumb = new phpthumb;
-$phpThumb->setSourceFilename($source);
+
+    $phpThumb = new phpthumb;
+    $imagem_tumbb = explode("\\",$source);
+
+    $arrayy['model'] = $imagem_tumbb[2];
+    $arrayy['nome'] = array_pop($imagem_tumbb);
+
+    $phpThumb->setSourceFilename("trabalho_pi/"."app/webroot/images/uploads/".$arrayy['model']."/".$arrayy['nome']);
+
 $phpThumb->config_disable_debug = !Configure::read('debug');
 
 if ($params['maxDimension'] == 'w') {
