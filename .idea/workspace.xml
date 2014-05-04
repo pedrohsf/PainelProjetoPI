@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b5a547-db5a-457f-89c2-4939df552d1b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\Vendor\empty" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" afterPath="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/AppController.php" afterPath="$PROJECT_DIR$/app/Controller/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/User.php" afterPath="$PROJECT_DIR$/app/Model/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/UsersController.php" afterPath="$PROJECT_DIR$/app/Controller/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" afterPath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" afterPath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trabalho_pi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398684308144" ignored="false" />
+    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399223883059" ignored="false" />
     <file path="/NewsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1396631817153" ignored="false" />
     <file path="/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397064287363" ignored="false" />
     <file path="/add.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397679989718" ignored="false" />
@@ -25,9 +24,9 @@
     <file path="/ValidaCadastroEnderecosController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397502652660" ignored="false" />
     <file path="$PROJECT_DIR$/app/webroot/js/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397668788496" ignored="false" />
     <file path="/index.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398298887978" ignored="false" />
-    <file path="/AppController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398293806690" ignored="false" />
+    <file path="/AppController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399221589355" ignored="false" />
     <file path="/login.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397739227473" ignored="false" />
-    <file path="/top_menu.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398291486672" ignored="false" />
+    <file path="/top_menu.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399221321737" ignored="false" />
     <file path="/User.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026778365" ignored="false" />
     <file path="/FilesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398120145614" ignored="false" />
     <file path="/ProfessionalExperiences.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397953613776" ignored="false" />
@@ -41,6 +40,7 @@
     <file path="/TrabalhoController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398124112288" ignored="false" />
     <file path="/ProjectsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398299041744" ignored="false" />
     <file path="/google.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398687388610" ignored="false" />
+    <file path="/Photo.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399224089372" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +60,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Project.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Model/Project.php">
+      <file leaf-file-name="AppController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="128" selection-end="625" vertical-scroll-proportion="3.9230769">
+            <state line="72" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+      <file leaf-file-name="PhotosController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/PhotosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="0" selection-start="8685" selection-end="8685" vertical-scroll-proportion="0.37764934">
+            <state line="56" column="31" selection-start="1692" selection-end="1692" vertical-scroll-proportion="-7.1538463">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Model/Photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="2" selection-start="146" selection-end="146" vertical-scroll-proportion="0.3624031">
               <folding />
             </state>
           </provider>
@@ -81,7 +90,7 @@
       <file leaf-file-name="google.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../teste_busca_cpf/google.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="310" selection-end="357" vertical-scroll-proportion="-8.5">
+            <state line="13" column="3" selection-start="310" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +99,16 @@
       <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="71" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-10.884615">
+            <state line="85" column="71" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top_menu.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +117,7 @@
       <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Projects/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-0.65384614">
+            <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +126,7 @@
       <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Projects/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="-14.153846">
+            <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,22 +177,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Model/File.php" />
-        <option value="$PROJECT_DIR$/app/Model/Arquivo.php" />
         <option value="$PROJECT_DIR$/app/Controller/TrabalhoController.php" />
         <option value="$PROJECT_DIR$/app/View/Projects/add.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
         <option value="$PROJECT_DIR$/app/Model/Project.php" />
-        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/app/View/Projects/edit.ctp" />
         <option value="$PROJECT_DIR$/app/View/Projects/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Projects/view.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/ProjectsController.php" />
         <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php" />
-        <option value="$PROJECT_DIR$/app/Model/User.php" />
         <option value="$PROJECT_DIR$/../teste_busca_cpf/google.php" />
         <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp" />
+        <option value="$PROJECT_DIR$/app/Model/Photo.php" />
+        <option value="$PROJECT_DIR$/app/Controller/PhotosController.php" />
+        <option value="$PROJECT_DIR$/app/Model/User.php" />
       </list>
     </option>
   </component>
@@ -211,6 +229,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,6 +316,114 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -341,9 +468,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,8 +508,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\trabalho_pi\app\Model\Behavior" />
       <recent name="C:\xampp\htdocs\trabalho_pi\app\Model" />
+      <recent name="C:\xampp\htdocs\trabalho_pi\app\Model\Behavior" />
       <recent name="C:\xampp\htdocs\trabalho_pi\app\webroot\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -416,15 +560,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.035958905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31363636" sideWeight="0.99488056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2469697" sideWeight="0.9640411" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -500,126 +644,98 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/View/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="1020" selection-end="1202" vertical-scroll-proportion="0.22928709" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="758" selection-end="981" vertical-scroll-proportion="0.31766918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Users/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Cake/basics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="549" column="13" selection-start="14475" selection-end="14475" vertical-scroll-proportion="0.34962407">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Projects/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1398298924801" expanded="true" signature="83:139" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="114:139" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="197:309" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="284:309" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="297:309" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="895:992" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="982:992" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="1615:1766" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="2474:2538" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="2481:2538" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="2640:2681" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="3449:3484" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="3559:3610" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="3828:3879" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="4210:4261" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="4409:4460" placeholder="..." />
-            <marker date="1398298924801" expanded="true" signature="4613:4664" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Projects/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="534" selection-end="534" vertical-scroll-proportion="-1.194605" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/ProjectsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="5" selection-start="1691" selection-end="1691" vertical-scroll-proportion="1.1746641">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/codigosUpload.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="1195" selection-end="1264" vertical-scroll-proportion="0.88035715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="71" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-10.884615">
-          <folding />
-        </state>
+        <state line="54" column="5" selection-start="1691" selection-end="1691" vertical-scroll-proportion="1.1746641" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Projects/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-0.65384614">
+        <state line="23" column="233" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Projects/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="-14.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="975" column="45" selection-start="28185" selection-end="28185" vertical-scroll-proportion="0.7263158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="629" selection-end="629" vertical-scroll-proportion="0.33146068">
+        <state line="67" column="43" selection-start="646" selection-end="3081" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../teste_busca_cpf/google.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="310" selection-end="357" vertical-scroll-proportion="-8.5">
+        <state line="13" column="3" selection-start="310" selection-end="357" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Project.php">
+    <entry file="file://$PROJECT_DIR$/app/Model/AppModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="128" selection-end="625" vertical-scroll-proportion="3.9230769">
-          <folding />
-        </state>
+        <state line="33" column="30" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.44023904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Assinante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="0" selection-start="8685" selection-end="8685" vertical-scroll-proportion="0.37764934">
+        <state line="217" column="1" selection-start="7835" selection-end="7835" vertical-scroll-proportion="-141.88461" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/codigosUpload.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="48" selection-start="200" selection-end="254" vertical-scroll-proportion="0.13178295" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Behavior/MeioUploadBehavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="42" selection-start="937" selection-end="952" vertical-scroll-proportion="0.39203355" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="182" selection-end="182" vertical-scroll-proportion="0.3469388" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="71" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1994" selection-end="1994" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="33" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.37551022" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/PhotosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="31" selection-start="1692" selection-end="1692" vertical-scroll-proportion="-7.1538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="146" selection-end="146" vertical-scroll-proportion="0.3624031">
           <folding />
         </state>
       </provider>

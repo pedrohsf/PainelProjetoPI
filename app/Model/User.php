@@ -13,27 +13,6 @@ App::uses('AuthComponent', 'Controller/Component');
  */
 class User extends AppModel {
 
-/**
- * Validation rules
- *
- * @var array
- */
-    var $actsAs = array(
-        'MeioUpload' => array(
-            'filename' => array(
-                'thumbsizes' => array(
-                    'pequena' => array(
-                        'width' => 48,
-                        'height' => 48
-                    ),
-                    'medio' => array(
-                        'width' => 180,
-                        'height' => 180
-                    )
-                )
-            )
-        )
-    );
 
 	public $validate = array(
 		'username' => array(
@@ -131,19 +110,32 @@ class User extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Project' => array(
-			'className' => 'Project',
-			'foreignKey' => 'user_id',
-			'dependent' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
+        'Project' => array(
+            'className' => 'Project',
+            'foreignKey' => 'user_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
+        'Photo' => array(
+            'className' => 'Photo',
+            'foreignKey' => 'user_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
 		'Formation' => array(
 			'className' => 'Formation',
 			'foreignKey' => 'user_id',

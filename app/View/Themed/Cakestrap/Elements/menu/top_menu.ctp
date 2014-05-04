@@ -19,7 +19,9 @@
             <li style="float:right; " >
                 <div class="btn-group" >
                     <button type="button" style=" padding: 0px; "  class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <?= $this->Html->image('avatar-120x120.png',array('style'=>'max-width:48px;' )); ?>
+
+                            <?= $this->Html->image('avatar-120x120.png',array('style'=>'max-width:48px;' )); ?>
+
                     </button>
                     <ul class="dropdown-menu" role="menu">
 

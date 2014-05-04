@@ -215,7 +215,7 @@ class UsersController extends AppController {
             $idAddress = $this->validaCadastroEnderecoController->mergeAddresses($address);
 
             $saveUser['User'] = $this->request->data['User'];
-
+ 
             unset($saveUser['User']['Address']);
             unset($saveUser['User']['Neighborhood']);
             unset($saveUser['User']['City']);

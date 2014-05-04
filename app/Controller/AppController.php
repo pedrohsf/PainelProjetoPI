@@ -70,6 +70,9 @@ class AppController extends Controller {
         $this->set('admLocal',$this->admLocal);
         // seta variavel de controller em todas as views com o controller atual em minúsculo
 		$this->set('controller',strtolower($this->params['controller']));
-	}
+
+
+
+    }
 	
 }
