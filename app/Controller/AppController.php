@@ -69,7 +69,8 @@ class AppController extends Controller {
         // seta variavel de endereço local do painel em todas as views para achar arquivos
         $this->set('admLocal',$this->admLocal);
         // seta variavel de controller em todas as views com o controller atual em minúsculo
-		$this->set('controller',strtolower($this->params['controller']));
+        $this->set('controller',$this->AppController);
+        $this->set('action',$this->AppAction);
 
 
 

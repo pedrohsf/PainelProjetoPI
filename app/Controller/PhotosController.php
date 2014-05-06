@@ -16,14 +16,33 @@ class PhotosController extends AppController {
 	public $components = array('Paginator');
 
 
-	public function add() { 
+	public function add($c = null , $a = null) {
 		if ($this->request->is('post')) {
 			$this->Photo->create();
-			if ($this->Photo->save($this->request->data)) {
-				$this->Session->setFlash(__('Photo foi salvo com sucesso!'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
+            $this->request->data['Photo']['user_id'] = $this->Auth->user('id');
+            $existeAlgumaFoto = $this->Photo->find('first',array('conditions'=>array('Photo.user_id' => $this->Auth->user('id'), 'Photo.type' => 'proposal')));
+
+            $jaExistiaUpdate = "";
+            if (!empty($existeAlgumaFoto)){
+                $this->request->data['Photo']['id'] = $existeAlgumaFoto['Photo']['id'] ;
+                $jaExistiaUpdate = "você já havia enviado uma foto anterior que estava como proposta de imagem de perfil, essa a substituirá,";
+            }
+
+
+            if ($this->Photo->save($this->request->data)) {
+                $this->Session->setFlash( _('Sua imagem foi salva com sucesso,'.$jaExistiaUpdate.' espere até que seja avaliada e liberada por um supervisor.'), 'flash/success');
+                if(!empty($c) AND !empty($a)){
+                    $this->redirect(array('controller'=>$c ,'action' => $a));
+                }else{
+                    $this->redirect(array('controller'=>'projects' ,'action' => 'index'));
+                }
 			} else {
-				$this->Session->setFlash(__('Photo não pode ser salvo, por favor tente novamente.'), 'flash/error');
+				$this->Session->setFlash(__('Sua imagem não pode ser salva, por favor tente novamente.'), 'flash/error');
+                if(!empty($c) AND !empty($a)){
+                    $this->redirect(array('controller'=>$c ,'action' => $a));
+                }else{
+                    $this->redirect(array('controller'=>'projects' ,'action' => 'index'));
+                }
 			}
 		}
 		$users = $this->Photo->User->find('list');
@@ -37,10 +56,10 @@ class PhotosController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Photo->save($this->request->data)) {
-				$this->Session->setFlash(__('Photo foi salvo com sucesso!'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('Photo não pode ser salvo, por favor tente novamente.'), 'flash/error');
+				$this->Session->setFlash(__('Sua imagem foi salva com sucesso, espere até que seja avaliada e liberada por um supervisor.'), 'flash/success');
+                $this->redirect(array('action' => 'index'));
+            } else {
+				$this->Session->setFlash(__('Sua imagem não pode ser salvo, por favor tente novamente.'), 'flash/error');
 			}
 		} else {
 			$options = array('conditions' => array('Photo.' . $this->Photo->primaryKey => $id));

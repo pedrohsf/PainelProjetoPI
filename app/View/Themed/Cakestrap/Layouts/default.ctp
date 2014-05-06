@@ -83,10 +83,10 @@
                         <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-picture"></span> Trocar imagem sua imagem</h4>
                     </div>
                     <div class="modal-body">
-                        <form role="form" action="<?= $admLocal ?>Users/addImage" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= $admLocal ?>Photos/add/<?= $controller."/".$action ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="exampleInputFile">Envie uma imagem.</label>
-                                <input type="file" id="exampleInputFile" name="data[User][filename]">
+                                <input type="file" id="exampleInputFile" name="data[Photo][filename]">
                                 <p class="help-block">Sua imagem deve conter apenas você, com roupas formais, ela vai ser avaliada por um supervisor.</p>
                                 <p class="help-block">Tamanho Máximo: EX:MG Tipos aceitos : .jpg , .png , .jpeg</p>
                             </div>

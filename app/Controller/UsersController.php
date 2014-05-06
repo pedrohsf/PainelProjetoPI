@@ -233,21 +233,6 @@ class UsersController extends AppController {
     }
 
 
-    public function addImage() {
-        if ($this->request->is('post')) {
-            $this->request->data['User']['id'] = $this->Auth->user('id');
-
-            if ($this->User->save($this->request->data)) {
-
-                $this->Session->setFlash( _('Sua imagem foi salva com sucesso, espere até que seja avaliada e liberada por um supervisor.'), 'flash/success');
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('User não pode ser salvo, por favor tente novamente.'), 'flash/error');
-            }
-        }
-
-    }
-
     /*
      * Painel do aluno action
      *
