@@ -14,6 +14,8 @@ class AppController extends Controller {
     public $AppController;
 
 
+    public $uses = array('User');
+
 
 
     public $components = array(
@@ -54,7 +56,6 @@ class AppController extends Controller {
 
 
 
-
         $this->AppAction = strtolower($this->params['action']);
         $this->AppController = strtolower($this->params['controller']);
 
@@ -75,5 +76,22 @@ class AppController extends Controller {
 
 
     }
-	
+
+
+    // função é chamada logo depois que a pagina for filtrada
+    public function afterFilter(){
+        // sempre verificar se usuário tem o registro bloquiado, se bloquiado sera impedido de mecher no sistema
+        if ($this->Auth->loggedIn()){
+
+
+
+            // busca o usuário para ver se seu registro foi bloqueado, se bloquiado ele não podera mecher mais no sistema
+            if(! ( $this->User->find('first',array('conditions'=>array('User.id'=>$this->Auth->user('id'))))['User']['accepted'] ) ){
+                $this->Session->setFlash( _('Seu usuário foi bloqueado, converse com um supervisor a respeito do bloqueio, até lá você será impedido de entrar no sistema.'), 'flash/success');
+                $this->redirect(array("controller"=>"users","action"=>"logout"));
+            }
+        }
+
+    }
+
 }
