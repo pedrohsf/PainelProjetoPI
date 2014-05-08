@@ -27,7 +27,9 @@
                                 ); ?> </td>
                             <td><?php echo h($professionalExperience['ProfessionalExperience']['description']); ?>&nbsp;</td>
                             <td class="actions">
-
+                                <?php if( (! $professionalExperience['ProfessionalExperience']['accepted'] ) AND (!empty($professionalExperience['ProfessionalExperience']['supervisor_description'])) ): ?>
+                                    <?php echo $this->Html->link(__('Verificar Pendencia'), array('action' => 'view', $professionalExperience['ProfessionalExperience']['id']), array('class' => 'btn btn-default btn-xs')); ?>
+                                <?php endif; ?>
                                 <?php echo $this->Form->postLink(__('Apagar'), array('action' => 'delete', $professionalExperience['ProfessionalExperience']['id']), array('class' => 'btn btn-default btn-xs'), __('Tem certeza que deseja apagar este item? %s?', $professionalExperience['ProfessionalExperience']['id'])); ?>
                             </td>
                         </tr>

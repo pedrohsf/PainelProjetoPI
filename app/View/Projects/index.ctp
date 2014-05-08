@@ -75,21 +75,11 @@
                 </div><!-- .form-group -->
 
                 <div class="form-group">
-                    <?php echo $this->Form->label('filename', 'Envie um novo projeto compactado em .zip ou .rar, todos os projetos enviados vão ser avaliados pelo supervisor.');?>
+                    <?php echo $this->Form->label('filename', 'Envie um novo projeto compactado em .zip, todos os projetos enviados vão ser avaliados pelo supervisor.');?>
                     <?php echo $this->Form->input('filename', array('class' => 'form-control','type' => 'file')); ?>
                 </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <?php echo $this->Form->input('dir', array('class' => 'form-control','type' => 'hidden')); ?>
-                </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <?php echo $this->Form->input('filesize', array('class' => 'form-control','type' => 'hidden')); ?>
-                </div><!-- .form-group -->
-
-                <div class="form-group">
-                    <?php echo $this->Form->input('mimetype', array('class' => 'form-control','type' => 'hidden')); ?>
-                </div><!-- .form-group -->
 
             </fieldset>
             <?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary')); ?>

@@ -10,7 +10,7 @@ class Project extends AppModel {
     public $actsAs = array(
         'MeioUpload' => array(
             'filename' => array(
-                'maxSize' => 20971520 , // 2MG * 10: 20 MG
+                'maxSize' => 6291456 , // 6MG
                 'dir' => 'files{DS}uploads',
                 'allowedMime' => array(
                     'application/octet-stream',

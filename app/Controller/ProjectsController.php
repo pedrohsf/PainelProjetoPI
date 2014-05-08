@@ -59,7 +59,7 @@ class ProjectsController extends AppController {
  *
  * @return void
  */
-	public function add() { 
+	public function add() {
 		if ($this->request->is('post')) {
 			$this->Project->create();
             $this->request->data['Project']['user_id'] = $this->Auth->user('id'); // valida o user online como dono do projeto
@@ -68,7 +68,8 @@ class ProjectsController extends AppController {
 				$this->Session->setFlash(__('O Projeto foi enviado para análise, se aceito vai aparecer nos seus projetos automáticamente.'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('Project não pode ser salvo, por favor tente novamente.'), 'flash/error');
+				$this->Session->setFlash(__('Projeto não pode ser salvo, por favor tente novamente.'), 'flash/error');
+                $this->redirect(array('action' => 'index'));
 			}
 		}
 		$users = $this->Project->User->find('list');
