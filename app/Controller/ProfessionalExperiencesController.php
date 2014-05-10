@@ -25,6 +25,7 @@ class ProfessionalExperiencesController extends AppController{
                 $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash(__('Experiência Profissional não pode ser cadastrado, por favor tente novamente.'), 'flash/error');
+                $this->redirect(array('action' => 'index'));
             }
         }
     }
