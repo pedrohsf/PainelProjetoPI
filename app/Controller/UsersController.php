@@ -20,7 +20,7 @@ class UsersController extends AppController {
  */
     // receber a instancia da classe que valida o endereço
     public $validaCadastroEnderecoController;
-    public $uses = array('User','Update','UpdateDescription');
+    public $uses = array('User','Update','UpdateDescription','Address');
     /*
      * Before Filter é chamado antes de qualquer validação, cadastro ou renderização da pagina...
      */
@@ -239,9 +239,17 @@ class UsersController extends AppController {
      */
 
     public function painelAluno(){
-
+        $this->Address->recursive = 4;
         $usuario = $this->User->find('first',array('conditions'=>array('User.id'=>$this->Auth->user('id'))));
+        // buscando endereço completo do usuário no banco e setando em um unico array
+        $addressUser = $this->Address->find('first',array('conditions'=>array('Address.id'=>$usuario['User']['address_id'])));
+        $addressUser['Address']['Neighborhood'] = $addressUser['Neighborhood'];
+        unset($addressUser['Neighborhood']);
+        // junta os dois arrays em um unico com tudo do usuário
+        $usuario['Address'] += $addressUser['Address'];
+        // seta na view
         $this->set('usuario',$usuario);
+
     }
 
 	

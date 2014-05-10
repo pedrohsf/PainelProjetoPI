@@ -14,7 +14,7 @@
                 // verifica a existencia de >revisado< se ela já tiver sido revizado, essa tag vai existir no fim da string
                 $description_revisado = stripos ($supervisor_description,">revisado<");
                 if ($description_revisado !== false): ?>
-                    <p style="color:green;"><?php echo __('Este projeto já foi revisado por você, esperando por nova avaliação do supervisor.'); ?></p>
+                    <p style="color:green;"><?php echo __('Esta experiência profissional já foi revisado por você, esperando por nova avaliação do supervisor.'); ?></p>
             <?php endif; ?>
 
 
