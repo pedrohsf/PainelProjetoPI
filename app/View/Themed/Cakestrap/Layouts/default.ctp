@@ -16,12 +16,13 @@
 			//echo $this->Html->css('bootstrap-theme.min');
 			echo $this->Html->css('core');
 			echo $this->Html->css('style');
-			echo $this->Html->css('style');
+            echo $this->Html->css('ion.tabs');
+            echo $this->Html->css('ion.tabs.skinFlat');
 			echo $this->fetch('css');
 			
-			echo $this->Html->script('libs/jquery-1.10.2.min'); 
+			echo $this->Html->script('libs/jquery-1.10.2.min');
 			echo $this->Html->script('libs/bootstrap.min');
-			
+            echo $this->Html->script('ion.tabs.min.js');
 			echo $this->fetch('script');
 		?>
 		
@@ -103,6 +104,76 @@
         </div>
         <!-- Fim Modal Image User Change -->
 
+
+        <?php if($controller === 'updates'){ ?>
+
+
+            <!-- Modal Update changes-->
+            <div class="modal fade" id="modalUpdateSupervisorDescription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Enviar aviso para <b></b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <form id="formSupervisorDescriptionUpdate" method="post" action="" >
+                            <textarea style="min-width:100%; min-height: 200px; padding: 5px; max-width: 100%;"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary"">Enviar</button>
+
+                            </form>
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal" >Cancelar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+                $('.btn-formation').click(function(){
+
+                    modalSupervisorDescriptionLink(getIdItem(this),"Formation");
+
+                });
+
+                $('.btn-professionalExperience').click(function(){
+
+                    modalSupervisorDescriptionLink(getIdItem(this),"ProfessionalExperience");
+
+                });
+
+                $('.btn-project').click(function(){
+
+                    modalSupervisorDescriptionLink(getIdItem(this),"Project");
+
+                });
+
+                function getIdItem(objeto){
+                    var item = objeto.toString();
+                    var item = item.split("/");
+                    var id = item[item.length-1];
+                    return id;
+                }
+
+                function modalSupervisorDescriptionLink(id,type){
+
+                    $("#formSupervisorDescriptionUpdate").attr("action", "<?= $admLocal ?>Updates/descriptionUpdate/" + id + "/" + type );
+
+                }
+
+                function modalSupervisorDescriptionTitle(name){
+
+                    $("#modalUpdateSupervisorDescription #myModalLabel b").text(
+                        name
+                    );
+                }
+
+            </script>
+
+        <?php } ?>
 
 	</body>
 

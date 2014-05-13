@@ -2,42 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b5a547-db5a-457f-89c2-4939df552d1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/View/Formations/edit.ctp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/pedro.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/View/Formations/view.ctp" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\files\uploads\Leatrix_Latency_Fix_1_23.zip" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\user\974619_547391432047301_1324161950_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\user\thumb\medio\974619_547391432047301_1324161950_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\user\thumb\mini\974619_547391432047301_1324161950_n.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\trabalho_pi\app\webroot\images\uploads\user\thumb\pequena\974619_547391432047301_1324161950_n.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/FormationsController.php" afterPath="$PROJECT_DIR$/app/Controller/FormationsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/ProfessionalExperiencesController.php" afterPath="$PROJECT_DIR$/app/Controller/ProfessionalExperiencesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Formations/index.ctp" afterPath="$PROJECT_DIR$/app/View/Formations/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/UpdatesController.php" afterPath="$PROJECT_DIR$/app/Controller/UpdatesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Users/add.ctp" afterPath="$PROJECT_DIR$/app/View/Users/add.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" afterPath="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Updates/index.ctp" afterPath="$PROJECT_DIR$/app/View/Updates/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trabalho_pi.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399741160142" ignored="false" />
+    <file path="/Dummy.txt" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1400025298219" ignored="false" />
     <file path="/NewsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1396631817153" ignored="false" />
     <file path="/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397064287363" ignored="false" />
-    <file path="/add.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397679989718" ignored="false" />
+    <file path="/add.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399913775195" ignored="false" />
     <file path="/a.dummy" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399393994772" ignored="false" />
     <file path="/EnderecoController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397672002759" ignored="false" />
     <file path="/UsersController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399743205225" ignored="false" />
-    <file path="/default.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399308393675" ignored="false" />
+    <file path="/default.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1400006016809" ignored="false" />
     <file path="/core.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397065076572" ignored="false" />
     <file path="/ValidaCadastro.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397177223812" ignored="false" />
     <file path="/ValidaCadastroEnderecos.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397176127229" ignored="false" />
     <file path="/ValidaCadastroEnderecosController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397502652660" ignored="false" />
-    <file path="$PROJECT_DIR$/app/webroot/js/ajax.js" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397668788496" ignored="false" />
-    <file path="/index.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399749935192" ignored="false" />
+    <file path="/index.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1400001551342" ignored="false" />
     <file path="/AppController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399501711277" ignored="false" />
     <file path="/login.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397739227473" ignored="false" />
     <file path="/top_menu.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399744324852" ignored="false" />
     <file path="/User.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026778365" ignored="false" />
     <file path="/FilesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398120145614" ignored="false" />
     <file path="/ProfessionalExperiences.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1397953613776" ignored="false" />
-    <file path="/UpdatesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398006480046" ignored="false" />
+    <file path="/UpdatesController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1400000079631" ignored="false" />
     <file path="/view.ctp" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399579869463" ignored="false" />
     <file path="/SkillsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398009507720" ignored="false" />
     <file path="/Update.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1398026528922" ignored="false" />
@@ -57,6 +54,7 @@
     <file path="/State.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399742653640" ignored="false" />
     <file path="/FormationsController.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399750132069" ignored="false" />
     <file path="/a.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399749052243" ignored="false" />
+    <file path="/Formation.php" changelist="51b5a547-db5a-457f-89c2-4939df552d1b" time="1399914285136" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,36 +80,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Formations/index.ctp">
+        <entry file="file://$PROJECT_DIR$/app/View/Updates/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-17.0">
+            <state line="86" column="286" selection-start="5094" selection-end="5094" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormationsController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controller/FormationsController.php">
+      <file leaf-file-name="default.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="52" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.6396917">
+            <state line="149" column="75" selection-start="5623" selection-end="5623" vertical-scroll-proportion="0.034274194">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Formations/edit.ctp">
+      <file leaf-file-name="UpdatesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/UpdatesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="312" selection-end="312" vertical-scroll-proportion="-2.9615386">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Formations/view.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-14.730769">
+            <state line="25" column="44" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,11 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/View/ProfessionalExperiences/edit.ctp" />
-        <option value="$PROJECT_DIR$/app/View/ProfessionalExperiences/view.ctp" />
-        <option value="$PROJECT_DIR$/app/Model/Neighborhood.php" />
-        <option value="$PROJECT_DIR$/app/Model/City.php" />
-        <option value="$PROJECT_DIR$/app/Model/State.php" />
         <option value="$PROJECT_DIR$/app/Model/Address.php" />
         <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/app/View/Users/painel_aluno.ctp" />
@@ -151,6 +135,11 @@
         <option value="$PROJECT_DIR$/app/View/Formations/edit.ctp" />
         <option value="$PROJECT_DIR$/app/View/Formations/index.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/FormationsController.php" />
+        <option value="$PROJECT_DIR$/app/View/Users/add.ctp" />
+        <option value="$PROJECT_DIR$/app/Model/Formation.php" />
+        <option value="$PROJECT_DIR$/app/Controller/UpdatesController.php" />
+        <option value="$PROJECT_DIR$/app/View/Updates/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp" />
       </list>
     </option>
   </component>
@@ -203,7 +192,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,24 +238,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trabalho_pi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trabalho_pi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -290,7 +260,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,7 +286,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ProfessionalExperiences" />
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -334,7 +316,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Formations" />
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trabalho_pi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,6 +418,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,8 +433,8 @@
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -424,11 +449,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\trabalho_pi\app\Model" />
+      <recent name="C:\xampp\htdocs\trabalho_pi\app\webroot\js" />
+      <recent name="C:\xampp\htdocs\trabalho_pi\app\webroot\css" />
       <recent name="C:\xampp\htdocs\trabalho_pi\app\View\Formations" />
       <recent name="C:\xampp\htdocs\trabalho_pi\app\View\ProfessionalExperiences" />
-      <recent name="C:\xampp\htdocs\trabalho_pi\app\Model" />
-      <recent name="C:\xampp\htdocs\trabalho_pi\app\Model\Behavior" />
-      <recent name="C:\xampp\htdocs\trabalho_pi\app\webroot\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\trabalho_pi\app\Vendor" />
@@ -506,7 +531,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.9726027" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.9726027" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3030303" sideWeight="0.9726027" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3181818" sideWeight="0.9726027" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -582,117 +607,88 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Model/Neighborhood.php">
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/ion.tabs.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="-13.730769">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/City.php">
+    <entry file="file://$PROJECT_DIR$/app/webroot/css/ion.tabs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Address.php">
+    <entry file="file://$PROJECT_DIR$/app/View/Projects/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="387" selection-end="387" vertical-scroll-proportion="-12.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Users/login.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/State.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/PhotosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="195" selection-start="3090" selection-end="3090" vertical-scroll-proportion="1.0705395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Users/painel_aluno.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="81" selection-start="847" selection-end="847" vertical-scroll-proportion="-10.461538">
-          <folding>
-            <marker date="1399743922932" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399743922932" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="23" selection-start="9205" selection-end="9205" vertical-scroll-proportion="0.591716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/ProfessionalExperiences/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="0" selection-end="4204" vertical-scroll-proportion="-0.65286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Formations/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-17.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Formations/view.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-14.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Formations/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="312" selection-end="312" vertical-scroll-proportion="-2.9615386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/ProfessionalExperiencesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="4748" selection-end="5481" vertical-scroll-proportion="0.18111753">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="4459" vertical-scroll-proportion="-1.0240964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/FormationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="52" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.6396917">
+        <state line="97" column="52" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="23" selection-start="9205" selection-end="9205" vertical-scroll-proportion="1.2947977" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="39" selection-start="816" selection-end="832" vertical-scroll-proportion="0.4587738" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ProfessionalExperiencesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="166" selection-end="441" vertical-scroll-proportion="0.34" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Formations/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="157" selection-end="157" vertical-scroll-proportion="0.33268103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Formations/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Users/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="91" selection-start="6374" selection-end="6374" vertical-scroll-proportion="0.51055664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ProjectsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="12" selection-start="2070" selection-end="2501" vertical-scroll-proportion="0.032629557" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Elements/menu/top_menu.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/UpdatesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="44" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Updates/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="286" selection-start="5094" selection-end="5094" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Themed/Cakestrap/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="75" selection-start="5623" selection-end="5623" vertical-scroll-proportion="0.034274194">
           <folding />
         </state>
       </provider>

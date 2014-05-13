@@ -38,30 +38,40 @@
         float:left;
         width:50%;
     }
+    .cancelar_infos{
+        float:right;
+    }
+    .enviar_infos{
+        float:left;
+    }
+    .botao_infos{
+        margin:50px 0;
+    }
 </style>
 
 
 <div id="page-container" class="row">
 
-	<div id="sidebar" class="col-sm-3">
 
-		<div class="actions">
-		
-			<ul class="list-group">
-										<li class="list-group-item"><?php echo $this->Html->link(__('Listar Users'), array('action' => 'index')); ?></li>
-							</ul><!-- /.list-group -->
-		
-		</div><!-- /.actions -->
-		
-	</div><!-- /#sidebar .col-sm-3 -->
 	
-<div id="page-content" class="col-sm-9">
+<div id="page-content" class="col-sm-12">
 
     <div class="users form">
 			
         <?php echo $this->Form->create('User', array('inputDefaults' => array('label' => false), 'role' => 'form','accept-charset'=>'UTF-8')); ?>
                 <fieldset>
-                            <h2><?php echo __('Cadastrar Usuário'); ?></h2>
+                    <h2><?php echo __('Solicitação De Usuário'); ?></h2>
+
+                    <div class="form-group">
+                        <?php echo $this->Form->label('Nome');?>
+                        <?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
+                    </div><!-- .form-group -->
+
+                    <div class="form-group">
+                        <?php echo $this->Form->label('E-Mail');?>
+                        <?php echo $this->Form->input('email', array('class' => 'form-control')); ?>
+                    </div><!-- .form-group -->
+
                     <div class="form-group">
                         <?php echo $this->Form->label('Apelido');?>
                             <?php echo $this->Form->input('username', array('class' => 'form-control')); ?>
@@ -71,18 +81,6 @@
                         <?php echo $this->Form->label('Senha');?>
                             <?php echo $this->Form->input('password', array('class' => 'form-control')); ?>
                     </div><!-- .form-group -->
-
-
-                    <div class="form-group">
-                        <?php echo $this->Form->label('Nome');?>
-                            <?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
-                    </div><!-- .form-group -->
-
-                    <div class="form-group">
-                        <?php echo $this->Form->label('E-Mail');?>
-                            <?php echo $this->Form->input('email', array('class' => 'form-control')); ?>
-                    </div><!-- .form-group -->
-
 
                     <div class="form-group">
                         <?php echo $this->Form->label('Período Letivo');?>
@@ -157,8 +155,10 @@
                         </div>
                     </section>
                 </fieldset>
-            <?php echo $this->Form->submit('Enviar', array('class' => 'btn btn-large btn-primary enviar_infos')); ?>
-        <?php echo $this->Form->end(); ?>
+                <?php echo $this->Form->submit('Enviar Solicitação', array('class' => 'btn btn-large btn-primary enviar_infos botao_infos')); ?>
+                <?php echo $this->Html->link('Cancelar Solicitação', array('action'=>'login') ,array('class' => 'btn btn-large btn-danger cancelar_infos botao_infos')); ?>
+
+    <?php echo $this->Form->end(); ?>
 			
 		</div><!-- /.form -->
 			 
