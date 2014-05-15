@@ -20,9 +20,16 @@
             <li style="float:right; " >
                 <div class="btn-group" >
                     <button type="button" style=" padding: 0px; "  class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-
+                    <?php if(!empty($photo)){
+                        $img = explode('\\',$photo['Photo']['dir']);
+                        $img = implode('/',$img);
+                        $img = $admLocal.$img.'/thumb/mini/'.$photo['Photo']['filename'];
+                        ?>
+                        <img src="<?=$img?>" alt=""/>
+                    <?php }
+                    else{ ?>
                             <?= $this->Html->image('avatar-120x120.png',array('style'=>'max-width:48px;' )); ?>
-
+                    <?php } ?>
                     </button>
                     <ul class="dropdown-menu" role="menu">
 

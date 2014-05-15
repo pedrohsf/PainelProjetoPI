@@ -13,6 +13,15 @@
 	border-radius: 6px;
 	background: #eee;
 }
+.proposalPhotoPanel{
+    text-align: center ;
+}
+
+.linkerTitle{
+    color: #428BCA;
+    text-decoration: none;
+    cursor: default;
+}
 #UserLoginForm .input{
 	float:left;
 	width:100%;

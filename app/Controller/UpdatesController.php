@@ -16,24 +16,24 @@
 
         public function index(){
             $this->Project->recursive = 1;
-            $options = array ('conditions' => array('Project.accepted' => 0 ));
+            $options = array ('conditions' => array('Project.accepted' => 0 ),'order'=>array('Project.created DESC'));
             $this->set('projects', $this->Project->find('all',$options));
 
             $this->ProfessionalExperience->recursive = 1;
-            $options = array ('conditions' => array('ProfessionalExperience.accepted' => 0 ));
+            $options = array ('conditions' => array('ProfessionalExperience.accepted' => 0 ),'order'=>array('ProfessionalExperience.created DESC'));
             $this->set('professionalExperiences', $this->ProfessionalExperience->find('all',$options));
 
             $this->Formation->recursive = 1;
-            $options = array ('conditions' => array('Formation.accepted' => 0 ));
+            $options = array ('conditions' => array('Formation.accepted' => 0 ),'order'=>array('Formation.created DESC'));
             $this->set('formations', $this->Formation->find('all',$options));
 
             $this->Photo->recursive = 1;
-            $options = array ('conditions' => array('Photo.type' => 'proposal'));
+            $options = array ('conditions' => array('Photo.type' => 'proposal'),'order'=>array('Photo.created DESC'));
             $this->set('photos', $this->Photo->find('all',$options));
 
         }
 
-        public function acceptProject($id = null){
+        public function accept_project($id = null){
             if (!$this->Project->exists($id)) {
                 throw new NotFoundException(__('Projeto está inválido.'));
             }else{
@@ -48,11 +48,9 @@
                 }
             }
 
-
-
         }
 
-        public function acceptProfessionalExperience($id = null){
+        public function accept_professional_experience($id = null){
             if (!$this->ProfessionalExperience->exists($id)) {
                 throw new NotFoundException(__('Experiência Profissional está inválido.'));
             }else{
@@ -71,7 +69,7 @@
 
         }
 
-        public function acceptFormation($id = null){
+        public function accept_formation($id = null){
             if (!$this->Formation->exists($id)) {
                 throw new NotFoundException(__('Formação está inválido.'));
             }else{
@@ -86,5 +84,64 @@
                 }
             }
         }
+
+        public function accept_photo($id = null){
+            if (!$this->Photo->exists($id)) {
+                throw new NotFoundException(__('Foto está inválido.'));
+            }else{
+                $photo = $this->Photo->find('first',array('conditions'=>array('Photo.id'=> $id)));
+
+                $existUsedPhoto = $this->Photo->find('first',array('conditions'=>array( 'Photo.user_id'=>$photo['Photo']['user_id'] , 'Photo.type'=>'used' )));
+
+                if(!empty($existUsedPhoto)){
+                    if ($this->Photo->delete($existUsedPhoto['Photo']['id'])) {
+
+                    }else{
+                        $this->Session->setFlash(__('Ocorreu um erro durante a substituição da foto.'), 'flash/success');
+                        $this->redirect(array('action' => 'index'));
+                    }
+                }
+
+                $data['Photo']['id'] = $id;
+                $data['Photo']['type'] = 'used';
+                if ($this->Photo->save($data)) {
+                    $this->Session->setFlash(__('A Foto foi aceita.'), 'flash/success');
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('Foto não pode ser aceito, tente novamente.'), 'flash/error');
+                    $this->redirect(array('action' => 'index'));
+                }
+            }
+        }
+
+        public function description_update($id = null , $typeOfModel = null){
+
+            if(!in_array($typeOfModel,array('ProfessionalExperience','Project','Formation','Photo')) ){
+                throw new NotFoundException(__('Não é possivel fazer isto.'));
+            }
+
+            if (!$this->$typeOfModel->exists($id)) {
+                throw new NotFoundException(__('Está solicitação está inválida.'));
+            }
+
+            $this->$typeOfModel->id = $id ;
+            $data[$typeOfModel]['supervisor_description'] = $this->request->data['Info'];
+
+            if(!empty($data[$typeOfModel]['supervisor_description'])){
+                if($this->$typeOfModel->save($data)){
+                    $this->Session->setFlash(__('A solicitação foi enviada com sucesso.'), 'flash/success');
+                    $this->redirect(array('action' => 'index'));
+                }
+            }else{
+                $this->Session->setFlash(__('A solicitação foi enviada com sucesso.'), 'flash/success');
+                $this->redirect(array('action' => 'index'));
+
+            }
+
+            $this->redirect(array('action'=>'index'));
+
+
+        }
+
 
     }

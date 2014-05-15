@@ -25,6 +25,9 @@ class PhotosController extends AppController {
             $jaExistiaUpdate = "";
             if (!empty($existeAlgumaFoto)){
                 $this->request->data['Photo']['id'] = $existeAlgumaFoto['Photo']['id'] ;
+                if (stripos($existeAlgumaFoto['Photo']['supervisor_description'],">revisado<") === false){
+                     $this->request->data['Photo']['supervisor_description'] = $existeAlgumaFoto['Photo']['supervisor_description'].">revisado<" ;
+                }
                 $jaExistiaUpdate = "você já havia enviado uma foto anterior que estava como proposta de imagem de perfil, essa a substituirá,";
             }
 

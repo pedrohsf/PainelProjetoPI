@@ -20,7 +20,7 @@ class UsersController extends AppController {
  */
     // receber a instancia da classe que valida o endereço
     public $validaCadastroEnderecoController;
-    public $uses = array('User','Update','UpdateDescription','Address');
+    public $uses = array('User','Update','UpdateDescription','Address','Photo');
     /*
      * Before Filter é chamado antes de qualquer validação, cadastro ou renderização da pagina...
      */
@@ -249,6 +249,20 @@ class UsersController extends AppController {
         $usuario['Address'] += $addressUser['Address'];
         // seta na view
         $this->set('usuario',$usuario);
+
+        $supervisor_description = $this->Photo->find('first',array('conditions'=>array('Photo.user_id'=>$this->Auth->user('id'),'Photo.type'=>'proposal')));
+        $changePhoto = false;
+        if (!empty($supervisor_description)){
+            $recusedImage = $supervisor_description['Photo']['supervisor_description'];
+
+            if (stripos($recusedImage,">revisado<") === false AND !empty($recusedImage)){
+                $changePhoto = true;
+                $this->Session->setFlash(__(''), 'flash/error');
+                $this->Session->setFlash(__('Sua foto de proposta para perfil não foi aceita, envie outra assim que possível.</br> Recado do supervisor em relação a foto que você enviou: '.$recusedImage), 'flash/error');
+            }
+        }
+        $this->set('changePhoto',$changePhoto);
+        $this->set('photoProposal',$supervisor_description);
 
     }
 

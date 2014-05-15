@@ -31,9 +31,9 @@
 	
 
 
+    <body id="body_do_site">
 
-			
-		<div class="navbar">
+		<div class="navbar" style="position:relative;z-index: 1;">
 			<div class="navbar-inner">
 				<div class="container text-center ">
 			 
@@ -118,7 +118,7 @@
                         </div>
                         <div class="modal-body">
                             <form id="formSupervisorDescriptionUpdate" method="post" action="" >
-                            <textarea style="min-width:100%; min-height: 200px; padding: 5px; max-width: 100%;"></textarea>
+                            <textarea style="min-width:100%; min-height: 200px; padding: 5px; max-width: 100%;" name="data[Info]"></textarea>
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary"">Enviar</button>
@@ -131,47 +131,7 @@
                 </div>
             </div>
 
-            <script type="text/javascript">
 
-                $('.btn-formation').click(function(){
-
-                    modalSupervisorDescriptionLink(getIdItem(this),"Formation");
-
-                });
-
-                $('.btn-professionalExperience').click(function(){
-
-                    modalSupervisorDescriptionLink(getIdItem(this),"ProfessionalExperience");
-
-                });
-
-                $('.btn-project').click(function(){
-
-                    modalSupervisorDescriptionLink(getIdItem(this),"Project");
-
-                });
-
-                function getIdItem(objeto){
-                    var item = objeto.toString();
-                    var item = item.split("/");
-                    var id = item[item.length-1];
-                    return id;
-                }
-
-                function modalSupervisorDescriptionLink(id,type){
-
-                    $("#formSupervisorDescriptionUpdate").attr("action", "<?= $admLocal ?>Updates/descriptionUpdate/" + id + "/" + type );
-
-                }
-
-                function modalSupervisorDescriptionTitle(name){
-
-                    $("#modalUpdateSupervisorDescription #myModalLabel b").text(
-                        name
-                    );
-                }
-
-            </script>
 
         <?php } ?>
 

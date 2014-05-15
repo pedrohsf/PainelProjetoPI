@@ -14,7 +14,7 @@ class AppController extends Controller {
     public $AppController;
 
 
-    public $uses = array('User');
+    public $uses = array('User','Photo');
 
 
 
@@ -52,9 +52,10 @@ class AppController extends Controller {
      */
 
 	public function beforeFilter(){
-
-
-
+        // se estiver logado envia na variavel photo para user em layout
+        if($this->Auth->loggedIn()){
+            $this->set('photo',$this->Photo->find('first',array('conditions'=>array('Photo.user_id'=>$this->Auth->user('id'),'Photo.type'=>'used'))));
+        }
 
         $this->AppAction = strtolower($this->params['action']);
         $this->AppController = strtolower($this->params['controller']);

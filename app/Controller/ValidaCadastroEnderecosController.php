@@ -86,6 +86,7 @@
                     $this->mergeState($data['State']) // função que retorna id do estado , cadastrando se não existir
                 )
             );
+
             $address = $this->Address->find('first',array('conditions'=>array('Address.cep'=>$cep,'Address.street'=>$street,'Address.number'=>$number,'Address.complement'=>$complement,'Address.neighborhood_id'=>$neightborhood_id)));
 
             $dataSave = array('Address'=>array(
