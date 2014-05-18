@@ -111,7 +111,16 @@
                                 <tbody>
                                 <?php
                                 foreach ($projects as $project): ?>
-                                    <tr>
+                                    <?php
+                                    $supervisor_description = $project['Project']['supervisor_description'];
+                                    // verifica a existencia de >revisado< se ela já tiver sido revizado, se já, então ele vai conter algo diferente de false
+                                    $description_revisado = stripos ($supervisor_description,">revisado<");
+                                    ?>
+                                    <tr
+                                        <?php if(!empty($supervisor_description)){ ?>
+                                            style="<?= ($description_revisado !== false)? 'color:blue;' : 'color:red;' ?>"
+                                        <?php } ?>
+                                        >
                                         <td>
                                             <?= $this->Html->link($project['User']['name'],array('controller'=>'users','action'=>'view',$project['User']['id']),array('target'=>'_blank'));?>
                                         </td>
@@ -122,7 +131,7 @@
                                             $arquiveLocate = $admLocal.$project['Project']['dir']."/".$project['Project']['filename'];
                                         ?>
                                         <td> <a target="_blank" href="<?=$arquiveLocate?>"> <?= $project['Project']['filename'] ?> </a> &nbsp;</td>
-                                        <td><?php echo h($project['Project']['description']); ?>&nbsp;</td>
+                                        <td><?php echo h($project['Project']['description']); ?> <?= ($description_revisado === false AND !empty($supervisor_description) )? "<i> (OBS: $supervisor_description) </i>" : "";  ?>&nbsp;</td>
                                         <td><?php echo date('d/m/Y',strtotime($project['Project']['created'])); ?>&nbsp;</td>
                                         <td class="actions">
                                             <?php echo $this->Form->postLink(__('Aceitar'), array('action' => 'accept_project', $project['Project']['id']), array('class' => 'btn btn-default btn-xs')); ?>

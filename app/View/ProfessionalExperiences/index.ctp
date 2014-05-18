@@ -2,7 +2,10 @@
 <div id="page-container" class="row">
 
 
-    <div id="page-content" class="col-sm-12">
+    <?php echo $this->Html->tag('span','Listar', array('class' => 'btn btn-lg btn-info btn-listar')); ?>
+    <?php echo $this->Html->tag('span','Cadastrar' ,array('class' => 'btn btn-lg btn-primary btn-cadastrar')); ?>
+
+    <div id="page-content" class="col-sm-12 lista">
 
         <div class="projects index">
 
@@ -58,7 +61,7 @@
     </div><!-- /#page-content .col-sm-9 -->
 
 
-    <div id="page-content" class="col-sm-12">
+    <div id="page-content" class="col-sm-12 cadastro" style="display: none;">
 
         <div class="projects form">
 

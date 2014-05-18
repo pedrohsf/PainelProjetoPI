@@ -238,7 +238,7 @@ class UsersController extends AppController {
      *
      */
 
-    public function painelAluno(){
+    public function painel_aluno(){
         $this->Address->recursive = 4;
         $usuario = $this->User->find('first',array('conditions'=>array('User.id'=>$this->Auth->user('id'))));
         // buscando endereço completo do usuário no banco e setando em um unico array

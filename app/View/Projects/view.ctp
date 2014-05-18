@@ -50,7 +50,7 @@
                                 <p style="font-size:20px ">
 
 
-                                        <?php echo h(utf8_encode(str_replace(">revisado<","",$project['Project']['supervisor_description']))); ?>
+                                        <?php echo h(str_replace(">revisado<","",$project['Project']['supervisor_description'])); ?>
 
 
                                 </p>

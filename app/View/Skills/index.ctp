@@ -3,20 +3,10 @@
 
     <div id="page-container" class="row">
 
-        <div id="page-content" class="col-sm-12">
+        <?php echo $this->Html->tag('span','Listar', array('class' => 'btn btn-lg btn-info btn-listar')); ?>
+        <?php echo $this->Html->tag('span','Cadastrar' ,array('class' => 'btn btn-lg btn-primary btn-cadastrar')); ?>
 
-            <form action="<?= $admLocal.$controller ?>/add " method="post">
-
-                <h3>
-                    Novo Skill
-                </h3>
-                <input type="text"  name="data[Skill][name]">
-                <input type="submit" value="Cadastrar" class="btn  btn-primary enviar_infos">
-            </form>
-
-
-        </div>
-        <div id="page-content" class="col-sm-12">
+        <div id="page-content" class="col-sm-12 lista">
 
             <div class="users index">
 
@@ -66,4 +56,20 @@
             </div><!-- /.index -->
 
         </div>
+
+
+        <div id="page-content" class="col-sm-12 cadastro" style="display: none;">
+
+            <form action="<?= $admLocal.$controller ?>/add " method="post">
+
+                <h3>
+                    Novo Skill
+                </h3>
+                <input type="text"  name="data[Skill][name]">
+                <input type="submit" value="Cadastrar" class="btn  btn-primary enviar_infos">
+            </form>
+
+
+        </div>
+
     </div>

@@ -23,6 +23,7 @@
 			echo $this->Html->script('libs/jquery-1.10.2.min');
 			echo $this->Html->script('libs/bootstrap.min');
             echo $this->Html->script('ion.tabs.min.js');
+            echo $this->Html->script('abasCadastrarListar.js');
 			echo $this->fetch('script');
 		?>
 		
@@ -34,7 +35,7 @@
     <body id="body_do_site">
 
 		<div class="navbar" style="position:relative;z-index: 1;">
-			<div class="navbar-inner">
+			<div class="navbar-inner margin-menu">
 				<div class="container text-center ">
 			 
 				  
