@@ -45,11 +45,19 @@ class AppController extends Controller {
         return false;
     }
 
+    public function redirectByRole(){
+        if($this->userIsSupervisor()){
+            $this->redirect(array('controller'=>'users','action'=>'index'));
+        }else{
+            $this->redirect(array('controller'=>'users','action'=>'painel_aluno'));
+        }
+    }
 
     /*
      * Before Filter é chamado antes de qualquer validação, cadastro ou renderização da pagina...
      * Este before filter se repete para todos os controllers pois todos extender o APP Controller
      */
+
 
 	public function beforeFilter(){
         // se estiver logado envia na variavel photo para user em layout

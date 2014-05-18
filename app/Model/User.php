@@ -123,6 +123,19 @@ class User extends AppModel {
             'finderQuery' => '',
             'counterQuery' => ''
         ),
+        'Social' => array(
+            'className' => 'Social',
+            'foreignKey' => 'user_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
         'Photo' => array(
             'className' => 'Photo',
             'foreignKey' => 'user_id',

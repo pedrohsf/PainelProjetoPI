@@ -78,7 +78,7 @@ class UsersController extends AppController {
                         $this->redirect(array('action'=>'index'));
                         // se não direciona para painel do aluno
                     }else{
-                        $this->redirect(array('action'=>'painelAluno'));
+                        $this->redirect(array('action'=>'painel_aluno'));
                     }
                 }
             } else {
@@ -89,7 +89,12 @@ class UsersController extends AppController {
         }else if($this->Auth->loggedIn()){
 
             $this->Session->setFlash(__('Você já está logado no sistema.'), 'flash/error');
-            $this->redirect($this->Auth->redirect());
+            if($this->Auth->user('role') === 'Supervisor'){
+                $this->redirect(array('action'=>'index'));
+                // se não direciona para painel do aluno
+            }else{
+                $this->redirect(array('action'=>'painel_aluno'));
+            }
         }
 
     }

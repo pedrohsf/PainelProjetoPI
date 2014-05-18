@@ -47,3 +47,13 @@
 .margin-menu{
     margin:30px 0 ;
 }
+
+.badge-success:hover{
+    background-color: #00aa00;
+    font-size:17px;
+    padding: 0 6px;
+}
+
+.legenda-soc{
+    font-size:10px;
+}

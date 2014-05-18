@@ -98,7 +98,7 @@
 
                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-cloud-upload"></span> Atualizar Imagem !</button>
                         </form>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                     </div>
                 </div>
             </div>
@@ -135,6 +135,40 @@
 
 
         <?php } ?>
+
+
+        <?php if( ($controller === 'users') AND (!$supervisor) ) { ?>
+
+            <div class="modal fade" id="modalSocialsAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Cadastro/Edição de Rede Social</h4>
+                        </div>
+                        <div class="modal-body">
+                            <?php echo $this->Form->create('Social',array('controller'=>'socials','action'=>'add'), array('inputDefaults' => array('label' => false), 'role' => 'form')); ?>
+                            <div class="form-group">
+                                <?= $this->Form->input('type',array('label'=>'Tipo','class' => 'form-control','options'=>array('facebook'=>'Facebook','twitter'=>'Twitter','google+'=>'Google +','linkdin'=>'LinkDin'))); ?>
+                            </div>
+                            <div class="form-group">
+                                <?= $this->Form->input('link',array('class' => 'form-control')); ?>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer" >
+
+                            <button type="submit" class="btn btn-primary"">Cadastrar</button>
+
+                            </form>
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal" >Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <?php } ?>
+
 
 	</body>
 
