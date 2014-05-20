@@ -21,7 +21,7 @@
                         $existTypeMessage = "";
                         if (!empty($existType)){
                             $this->request->data['Social']['id'] = $existType['Social']['id'];
-                            $existTypeMessage = "você já havia enviado um link anterior que estava como proposta, essa o substituirá,";
+                            $existTypeMessage = "você já havia enviado um link, essa o substituirá,";
                             if(!empty($existType['Social']['supervisor_description'])){
                                 if (stripos($existType['Social']['supervisor_description'],">revisado<") === false){
                                     $this->request->data['Social']['supervisor_description'] = $existType['Social']['supervisor_description'].">revisado<" ;
@@ -29,7 +29,7 @@
                             }
                         }
                         $this->request->data['Social']['user_id'] = $this->Auth->user('id');
-                        $this->request->data['Sovial']['accepted'] = 0;
+                        $this->request->data['Social']['accepted'] = 0;
                         if ($this->Social->save($this->request->data)) {
                             $this->Session->setFlash( _('Sua rede social foi salva com sucesso, '.$existTypeMessage.' espere até que seja avaliada e liberada por um supervisor.'), 'flash/success');
                             $this->redirectByRole();
@@ -50,10 +50,8 @@
             }else{ // caso os campos de cadastro não sejam completados adequadamente
                 $this->redirectByRole();
             }
-
-
         }
- 
+
         public function delete($id = null){
 
             if (!$this->request->is('post')) {

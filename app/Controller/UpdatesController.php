@@ -2,7 +2,7 @@
 
     class UpdatesController extends AppController{
 
-        public $uses = array('Project','ProfessionalExperience','Formation','Photo');
+        public $uses = array('Project','ProfessionalExperience','Formation','Photo','Social');
 
         public function beforeFilter(){
             parent::beforeFilter();
@@ -30,6 +30,10 @@
             $this->Photo->recursive = 1;
             $options = array ('conditions' => array('Photo.type' => 'proposal'),'order'=>array('Photo.created DESC'));
             $this->set('photos', $this->Photo->find('all',$options));
+
+            $this->Social->recursive = 1;
+            $options = array ('conditions' => array('Social.accepted' => 0),'order'=>array('Social.created DESC'));
+            $this->set('socials', $this->Social->find('all',$options));
 
         }
 
@@ -85,6 +89,23 @@
             }
         }
 
+        public function accept_social($id = null){
+            if (!$this->Social->exists($id)) {
+                throw new NotFoundException(__('Rede social está inválida.'));
+            }else{
+                $data['Social']['id'] = $id;
+                $data['Social']['accepted'] = 1;
+                $data['Social']['supervisor_description'] = NULL;
+                if ($this->Social->save($data)) {
+                    $this->Session->setFlash(__('A Rede social foi aceita.'), 'flash/success');
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('Rede social não pode ser aceita, tente novamente.'), 'flash/error');
+                    $this->redirect(array('action' => 'index'));
+                }
+            }
+        }
+
         public function accept_photo($id = null){
             if (!$this->Photo->exists($id)) {
                 throw new NotFoundException(__('Foto está inválido.'));
@@ -114,9 +135,12 @@
             }
         }
 
+
+
+
         public function description_update($id = null , $typeOfModel = null){
 
-            if(!in_array($typeOfModel,array('ProfessionalExperience','Project','Formation','Photo')) ){
+            if(!in_array($typeOfModel,array('ProfessionalExperience','Project','Formation','Photo','Social')) ){
                 throw new NotFoundException(__('Não é possivel fazer isto.'));
             }
 

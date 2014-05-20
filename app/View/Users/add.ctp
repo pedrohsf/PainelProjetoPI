@@ -73,7 +73,7 @@
                     </div><!-- .form-group -->
 
                     <div class="form-group">
-                        <?php echo $this->Form->label('Apelido');?>
+                        <?php echo $this->Form->label('Usuário de acesso no painel');?>
                             <?php echo $this->Form->input('username', array('class' => 'form-control')); ?>
                     </div><!-- .form-group -->
 
@@ -84,7 +84,7 @@
 
                     <div class="form-group">
                         <?php echo $this->Form->label('Período Letivo');?>
-                        <?php echo $this->Form->input('periodo_letivo', array('class' => 'form-control','options'=>array('1°'=>'1°','2°'=>'2°','3°'=>'3°','4°'=>'4°','5°'=>'5°','6°'=>'6°','7°'=>'7°','8°'=>'8°'))); ?>
+                        <?php echo $this->Form->input('school_period', array('class' => 'form-control','options'=>array('1°'=>'1°','2°'=>'2°','3°'=>'3°','4°'=>'4°','5°'=>'5°','6°'=>'6°','7°'=>'7°','8°'=>'8°'))); ?>
                     </div><!-- .form-group -->
 
                     <div class="form-group">

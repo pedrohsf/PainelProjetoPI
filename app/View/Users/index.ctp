@@ -15,7 +15,6 @@
 
                             <th><?php echo $this->Paginator->sort('accepted','Aceito'); ?></th>
                             <th><?php echo $this->Paginator->sort('name','Nome'); ?></th>
-                            <th><?php echo $this->Paginator->sort('role','Regra'); ?></th>
                             <th><?php echo $this->Paginator->sort('email','E-Mail'); ?></th>
                             <th><?php echo $this->Paginator->sort('modified','Ultima Modificação'); ?></th>
                             <th class="actions"><?php echo __('Ações'); ?></th>
@@ -28,10 +27,9 @@
                             <td><?php echo $this->Html->image(
                                     ($user['User']['accepted']) ? 'user_check.png' : 'user_cancel.png'
                                 ); ?> </td>
-                            <td><?php echo h($user['User']['name']); ?>&nbsp;</td>
-                            <td><?php echo h($user['User']['role']); ?>&nbsp;</td>
-                            <td><?php echo h($user['User']['email']); ?>&nbsp;</td>
-                            <td><?php echo h(date('d-m-Y',strtotime($user['User']['modified']))); ?>&nbsp;</td>
+                            <td><?php echo utf8_encode($user['User']['name']); ?>&nbsp;</td>
+                            <td><?php echo utf8_encode($user['User']['email']); ?>&nbsp;</td>
+                            <td><?php echo utf8_encode(date('d-m-Y',strtotime($user['User']['modified']))); ?>&nbsp;</td>
                             <td class="actions">
                                 <?php echo $this->Html->link(__('Detalhar'), array('action' => 'view', $user['User']['id']), array('class' => 'btn btn-default btn-xs')); ?>
                                 <?php echo $this->Form->postLink(__('Apagar'), array('action' => 'delete', $user['User']['id']), array('class' => 'btn btn-default btn-xs'), __('Tem certeza que deseja apagar este item? %s?', $user['User']['id'])); ?>
@@ -47,7 +45,7 @@
 					</tbody>
 				</table>
 			</div><!-- /.table-responsive -->
-			
+
 			<p><small>
 				<?php
 				echo $this->Paginator->counter(array(

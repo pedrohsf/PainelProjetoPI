@@ -73,6 +73,8 @@ class AppController extends Controller {
 
             $this->set('supervisor', ($this->Auth->user('role') === 'Supervisor' ) ? TRUE : FALSE );
 
+        }else{
+            $this->set('supervisor',FALSE);
         }
         // seta variavel em todas as views para saber se user está ou não online
         $this->set('logado',$this->Auth->loggedIn());

@@ -73,7 +73,7 @@
                 $supervisor_description = $social['supervisor_description'];
                 // verifica a existencia de >revisado< se ela já tiver sido revizado, essa tag vai existir no fim da string
                 $description_revisado = stripos ($supervisor_description,">revisado<");
-                if ($description_revisado !== false){ ?>
+                if ($description_revisado !== false AND (!$social['accepted']) ){ ?>
                     <span style="color:green;"><?php echo __('Este link já foi revisado por você, esperando por nova avaliação do supervisor.'); ?></span>
                 <?php }elseif(!empty($supervisor_description) AND !($social['accepted']) ) { ?>
 

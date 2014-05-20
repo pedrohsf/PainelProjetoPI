@@ -16,15 +16,30 @@
 <div class="ionTabs" id="tabs_1" data-name="Tabs_Group_name">
     <ul class="ionTabs__head">
 
-            <li class="ionTabs__tab" data-target="images">Imagens</li>
+        <li class="ionTabs__tab" data-target="images">
+            <span class="glyphicon glyphicon-<?=(!empty($images)?'info-sign':'ok-sign')?>"> </span>
+            Imagens
+        </li>
 
+        <li class="ionTabs__tab" data-target="projects">
+            <span class="glyphicon glyphicon-<?=(!empty($projects)?'info-sign':'ok-sign')?>"> </span>
+            Projetos
+        </li>
 
-            <li class="ionTabs__tab" data-target="projects">Projetos</li>
+        <li class="ionTabs__tab" data-target="professionalExperiences">
+            <span class="glyphicon glyphicon-<?=(!empty($professionalExperiences)?'info-sign':'ok-sign')?>"> </span>
+            Experiências Profissionais
+        </li>
 
+        <li class="ionTabs__tab" data-target="formations">
+            <span class="glyphicon glyphicon-<?=(!empty($formations)?'info-sign':'ok-sign')?>"> </span>
+            Formações
+        </li>
 
-            <li class="ionTabs__tab" data-target="professionalExperiences">Experiências Profissionais</li>
-
-            <li class="ionTabs__tab" data-target="formations">Formações</li>
+        <li class="ionTabs__tab" data-target="socials">
+            <span class="glyphicon glyphicon-<?=(!empty($socials)?'info-sign':'ok-sign')?>"> </span>
+            Redes Sociais
+        </li>
 
     </ul>
     <div class="ionTabs__body">
@@ -278,6 +293,74 @@
             </div>
         </div>
 
+
+        <div class="ionTabs__item" data-name="socials">
+            <div id="page-container" class="row">
+
+
+                <div id="page-content" class="col-sm-12">
+
+                    <div class="index">
+
+
+                        <div class="table-responsive">
+                            <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th class="col-sm-1"><?php echo ('Aluno'); ?></th>
+                                    <th class="col-sm-6"><?php echo ('Link'); ?></th>
+                                    <th class="col-sm-1"><?php echo ('Enviado Dia'); ?></th>
+                                    <th class="actions"><?php echo __('Ações'); ?></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                foreach ($socials as $social): ?>
+                                    <?php
+                                    $supervisor_description = $social['Social']['supervisor_description'];
+                                    // verifica a existencia de >revisado< se ela já tiver sido revizado, se já, então ele vai conter algo diferente de false
+                                    $description_revisado = stripos ($supervisor_description,">revisado<");
+                                    ?>
+                                    <tr
+                                        <?php if(!empty($social['Social']['supervisor_description'])){ ?>
+                                            style="<?= ($description_revisado !== false)? 'color:blue;' : 'color:red;' ?>"
+                                        <?php } ?>
+                                        >
+                                        <td>
+                                            <?= $this->Html->link($social['User']['name'],array('controller'=>'users','action'=>'view',$social['User']['id']),array('target'=>'_blank'));?>
+                                        </td>
+
+                                        <td>
+                                            <a href="//<?= $social['Social']['link'] ?>" target="_blank">
+                                                <?= $this->Html->image('soc-'. ( ($social['Social']['type'] === 'google+') ? 'google' : $social['Social']['type'] ) .'.png',array('style'=>'max-width:40px;'));?>
+                                                <?= $social['Social']['link'] ?>
+                                            </a>
+                                            <?= ($description_revisado === false AND !empty($supervisor_description) )? "<i> (OBS: $supervisor_description) </i>" : "";  ?>&nbsp;</td>
+
+                                        <td><?php echo date('d/m/Y',strtotime($social['Social']['created'])); ?>&nbsp;</td>
+                                        <td class="actions">
+                                            <?php echo $this->Form->postLink(__('Aceitar'), array('action' => 'accept_social', $social['Social']['id']), array('class' => 'btn btn-default btn-xs')); ?>
+                                            <?php echo $this->Html->link(__('Solicitar Mudança'), array('action' => 'view', $social['Social']['id']), array('class' => 'btn btn-default btn-xs btn-social','data-toggle'=>"modal", "onclick"=>"modalSupervisorDescriptionTitle(\"".$social['User']['name']."\" )",'data-target'=>"#modalUpdateSupervisorDescription")); ?>
+                                            <?php echo $this->Form->postLink(__('Apagar'), array('controller'=>'socials','action' => 'delete', $social['Social']['id']), array('class' => 'btn btn-default btn-xs'), __('Tem certeza que deseja apagar este link? %s', $social['Social']['link'])); ?>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+
+                                </tbody>
+                            </table>
+                        </div><!-- /.table-responsive -->
+
+
+
+                    </div><!-- /.index -->
+
+                </div><!-- /#page-content .col-sm-9 -->
+
+
+
+            </div>
+        </div>
+
         <div class="ionTabs__preloader"></div>
 
         <p> <b>Legenda:</b> <span style="color:red">(Supervisor solicitou Mudança) </span> : <span style="color:blue">(Aluno verificou pendência e reenviou informação)</span> : (Ainda não verificado pelo supervisor) </p>
@@ -298,6 +381,12 @@
     $('.btn-formation').click(function(){
 
         modalSupervisorDescriptionLink(getIdItem(this),"Formation");
+
+    });
+
+    $('.btn-social').click(function(){
+
+        modalSupervisorDescriptionLink(getIdItem(this),"Social");
 
     });
 

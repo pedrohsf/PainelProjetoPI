@@ -67,7 +67,9 @@
 			</div><!-- /#footer .container -->
 			
 		</div><!-- /#main-container -->
-		
+
+
+        <?php /*
 		<div class="container">
 			<div class="well well-sm">
 				<small>
@@ -75,6 +77,9 @@
 				</small>
 			</div><!-- /.well well-sm -->
 		</div><!-- /.container -->
+
+        */ ?>
+
 
         <!-- Modal Image User Change -->
         <div class="modal fade" id="imageModalChange" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -158,7 +163,7 @@
 
                         <div class="modal-footer" >
 
-                            <button type="submit" class="btn btn-primary"">Cadastrar</button>
+                            <button type="submit" class="btn btn-primary"">Enviar</button>
 
                             </form>
                             <button type="button" class="btn btn-danger"  data-dismiss="modal" >Cancelar</button>
